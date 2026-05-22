@@ -1,12 +1,230 @@
-[00:00:05.097] Server  WARN    ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:05.369] Server  LOG     ✓ Ready in 4.3s
-[00:00:07.525] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:07.525] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/login","route":"/login"}
-[00:00:07.525] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1779081272133} /_vercel/insights/view
-[00:01:53.605] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:01:53.605] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/login","route":"/login"}
-[00:01:53.605] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1779081378517} /_vercel/insights/view
-[00:05:35.294] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1779081600242} /_vercel/insights/view
-[00:12:03.301] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:12:03.301] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/login","route":"/login"}
-[00:12:03.301] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1779081988248} /_vercel/insights/view
+[00:00:00.768] Server  WARN    ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:00.902] Server  LOG     ✓ Ready in 659ms
+[00:00:02.133] Browser ERROR   ./app/register/page.tsx:165:78
+Parsing ecmascript source code failed
+  163 |                         <div style={c.field}>
+  164 |                             <span style={{color:'#505060'}}>🔒</span>
+> 165 |                             <input style={c.inp} type="password" placeholder=
+      |                                                                              ^
+
+Expected '</', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./app/register/page.tsx [Client Component Browser]
+    ./app/register/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/register/page.tsx [Client Component SSR]
+    ./app/register/page.tsx [Server Component]
+[00:00:02.929] Server  ERROR   ⨯ ./app/register/page.tsx:165:78
+Parsing ecmascript source code failed
+  163 |                         <div style={c.field}>
+  164 |                             <span style={{color:'#505060'}}>🔒</span>
+> 165 |                             <input style={c.inp} type="password" placeholder=
+      |                                                                              ^
+
+Expected '</', got '<eof>'
+
+
+[00:00:03.857] Browser ERROR   uncaughtError: Error: ./app/register/page.tsx:165:78
+Parsing ecmascript source code failed
+  163 |                         <div style={c.field}>
+  164 |                             <span style={{color:'#505060'}}>🔒</span>
+> 165 |                             <input style={c.inp} type="password" placeholder=
+      |                                                                              ^
+
+Expected '</', got '<eof>'
+
+
+[00:00:04.019] Browser ERROR   ./app/register/page.tsx:165:78
+Parsing ecmascript source code failed
+  163 |                         <div style={c.field}>
+  164 |                             <span style={{color:'#505060'}}>🔒</span>
+> 165 |                             <input style={c.inp} type="password" placeholder=
+      |                                                                              ^
+
+Expected '</', got '<eof>'
+[00:00:04.019] Browser ERROR   ./app/register/page.tsx:165:78
+Parsing ecmascript source code failed
+  163 |                         <div style={c.field}>
+  164 |                             <span style={{color:'#505060'}}>🔒</span>
+> 165 |                             <input style={c.inp} type="password" placeholder=
+      |                                                                              ^
+
+Expected '</', got '<eof>'
+[00:00:04.626] Server  ERROR   ⨯ ./app/register/page.tsx:165:78
+Parsing ecmascript source code failed
+  163 |                         <div style={c.field}>
+  164 |                             <span style={{color:'#505060'}}>🔒</span>
+> 165 |                             <input style={c.inp} type="password" placeholder=
+      |                                                                              ^
+
+Expected '</', got '<eof>'
+
+
+[00:00:04.734] Browser ERROR   uncaughtError: Error: ./app/register/page.tsx:165:78
+Parsing ecmascript source code failed
+  163 |                         <div style={c.field}>
+  164 |                             <span style={{color:'#505060'}}>🔒</span>
+> 165 |                             <input style={c.inp} type="password" placeholder=
+      |                                                                              ^
+
+Expected '</', got '<eof>'
+
+
+[00:00:04.871] Browser ERROR   ./app/register/page.tsx:165:78
+Parsing ecmascript source code failed
+  163 |                         <div style={c.field}>
+  164 |                             <span style={{color:'#505060'}}>🔒</span>
+> 165 |                             <input style={c.inp} type="password" placeholder=
+      |                                                                              ^
+
+Expected '</', got '<eof>'
+[00:00:04.871] Browser ERROR   ./app/register/page.tsx:165:78
+Parsing ecmascript source code failed
+  163 |                         <div style={c.field}>
+  164 |                             <span style={{color:'#505060'}}>🔒</span>
+> 165 |                             <input style={c.inp} type="password" placeholder=
+      |                                                                              ^
+
+Expected '</', got '<eof>'
+[00:00:06.344] Server  ERROR   ⨯ ./app/register/page.tsx:165:78
+Parsing ecmascript source code failed
+  163 |                         <div style={c.field}>
+  164 |                             <span style={{color:'#505060'}}>🔒</span>
+> 165 |                             <input style={c.inp} type="password" placeholder=
+      |                                                                              ^
+
+Expected '</', got '<eof>'
+
+
+[00:00:06.488] Browser ERROR   uncaughtError: Error: ./app/register/page.tsx:165:78
+Parsing ecmascript source code failed
+  163 |                         <div style={c.field}>
+  164 |                             <span style={{color:'#505060'}}>🔒</span>
+> 165 |                             <input style={c.inp} type="password" placeholder=
+      |                                                                              ^
+
+Expected '</', got '<eof>'
+
+
+[00:00:06.627] Browser ERROR   ./app/register/page.tsx:165:78
+Parsing ecmascript source code failed
+  163 |                         <div style={c.field}>
+  164 |                             <span style={{color:'#505060'}}>🔒</span>
+> 165 |                             <input style={c.inp} type="password" placeholder=
+      |                                                                              ^
+
+Expected '</', got '<eof>'
+[00:00:06.627] Browser ERROR   ./app/register/page.tsx:165:78
+Parsing ecmascript source code failed
+  163 |                         <div style={c.field}>
+  164 |                             <span style={{color:'#505060'}}>🔒</span>
+> 165 |                             <input style={c.inp} type="password" placeholder=
+      |                                                                              ^
+
+Expected '</', got '<eof>'
+[00:00:32.317] Server  LOG     ✓ Compiled in 140ms
+[00:00:33.115] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:33.115] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/register","route":"/register"}
+[00:00:33.115] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/register color: rgb(120, 120, 120) color: inherit {"dp":"/register","o":"http://localhost:3000/register","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1779382067661} /_vercel/insights/view
+[00:00:34.583] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1779382069390} /_vercel/insights/view
+[00:00:35.496] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/register color: rgb(120, 120, 120) color: inherit {"dp":"/register","o":"http://localhost:3000/register","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1779382070304} /_vercel/insights/view
+[00:02:24.259] Server  LOG     ✓ Compiled in 120ms
+[00:02:37.008] Server  LOG     ✓ Compiled in 84ms
+[00:03:07.148] Server  LOG     ✓ Compiled in 84ms
+[00:03:08.823] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/register" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="ru" suppressHydrationWarning={true}>
+                          <body
+                            className="font-sans antialiased min-h-screen"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:03:08.823] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:03:08.823] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/register","route":"/register"}
+[00:03:08.823] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/register color: rgb(120, 120, 120) color: inherit {"dp":"/register","o":"http://localhost:3000/register","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1779382223628} /_vercel/insights/view
+[00:03:53.252] Server  LOG     ✓ Compiled in 71ms
+[00:04:18.316] Server  LOG     ✓ Compiled in 63ms
+[00:04:29.352] Server  LOG     ✓ Compiled in 104ms
+[00:05:19.287] Server  LOG     ✓ Compiled in 146ms
+[00:05:20.160] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/register" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="ru" suppressHydrationWarning={true}>
+                          <body
+                            className="font-sans antialiased min-h-screen"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:05:20.160] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:05:20.160] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/register","route":"/register"}
+[00:05:20.160] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/register color: rgb(120, 120, 120) color: inherit {"dp":"/register","o":"http://localhost:3000/register","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1779382354968} /_vercel/insights/view
+[00:38:52.548] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:38:52.548] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/register","route":"/register"}
+[00:38:52.548] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/register color: rgb(120, 120, 120) color: inherit {"dp":"/register","o":"http://localhost:3000/register","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1779384367343} /_vercel/insights/view
+[00:39:18.990] Server  LOG     ✓ Compiled in 379ms
+[00:40:11.968] Server  LOG     ✓ Compiled in 218ms
+[00:40:12.614] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:40:12.614] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/register","route":"/register"}
+[00:40:12.614] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/register color: rgb(120, 120, 120) color: inherit {"dp":"/register","o":"http://localhost:3000/register","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1779384447415} /_vercel/insights/view
+[00:40:41.433] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:40:41.433] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/register","route":"/register"}
+[00:40:41.433] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/register color: rgb(120, 120, 120) color: inherit {"dp":"/register","o":"http://localhost:3000/register","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1779384476330} /_vercel/insights/view
+[00:40:41.690] Server  LOG     ✓ Compiled in 124ms

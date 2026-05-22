@@ -2,7 +2,7 @@
 import { useState, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 
-const API = "http://localhost:8000"
+const API = process.env.NEXT_PUBLIC_API_URL!
 
 export default function LoginPage() {
     const router = useRouter()
@@ -57,14 +57,10 @@ export default function LoginPage() {
             const d = await r.json()
             if (d.token) {
                 document.cookie = `auth_token=${d.token}; path=/; max-age=86400`
-                localStorage.setItem("user", JSON.stringify(d.user))
-
+                localStorage.setItem('user', JSON.stringify(d.user))
                 ok('Успешно! Входим...')
-                setTimeout(() => {
-                    router.push('/')
-                    router.refresh()
-                }, 1000)
-            }else err('Неверный пароль')
+                setTimeout(() => { router.push('/'); router.refresh() }, 1000)
+            } else err('Неверный пароль')
         } catch { err('Ошибка при входе') }
         finally { setLoading(false) }
     }
@@ -77,7 +73,7 @@ export default function LoginPage() {
         logoN: { fontSize:26, fontWeight:700, color:'#fff', letterSpacing:'-.3px' },
         logoS: { fontSize:13, color:'#505060', marginTop:4 },
         tabRow: { display:'flex', background:'#141416', borderRadius:12, padding:3, marginBottom:24, border:'1px solid #2a2a2f' },
-        tab: (on: boolean) => ({ flex:1, textAlign:'center' as const, padding:'9px 0', borderRadius:9, fontSize:14, fontWeight:500, color: on ? '#fff' : '#a0a0b0', background: on ? '#6366f1' : 'transparent', cursor:'pointer', transition:'.2s', border:'none' }),
+        tab: (on: boolean) => ({ flex:1, textAlign:'center' as const, padding:'9px 0', borderRadius:9, fontSize:14, fontWeight:500, color: on?'#fff':'#a0a0b0', background: on?'#6366f1':'transparent', cursor:'pointer', transition:'.2s', border:'none' }),
         errBox: { background:'#1a0e0e', border:'1px solid #3d1515', borderRadius:10, padding:'10px 12px', color:'#f87171', fontSize:13, display:'flex', alignItems:'center', gap:8, marginBottom:14 },
         okBox: { background:'#0d1a12', border:'1px solid #14532d', borderRadius:10, padding:'10px 12px', color:'#4ade80', fontSize:13, display:'flex', alignItems:'center', gap:8, marginBottom:14 },
         title: { fontSize:24, fontWeight:700, color:'#fff', lineHeight:1.25, marginBottom:6 },
@@ -87,7 +83,7 @@ export default function LoginPage() {
         field: { display:'flex', alignItems:'center', gap:10, background:'#141416', border:'1px solid #2a2a2f', borderRadius:13, padding:'13px 15px', marginBottom:12 },
         inp: { background:'none', border:'none', outline:'none', color:'#fff', fontSize:15, flex:1, width:'100%', fontFamily:'inherit' },
         otp4: { display:'flex', gap:10, marginBottom:14 },
-        oc: { flex:1, textAlign:'center' as const, fontSize:6, fontWeight:700, color:'#fff', background:'#141416', border:'1px solid #2a2a2f', borderRadius:14, outline:'none', fontFamily:'inherit', padding:'14px 0px' },
+        oc: { flex:1, textAlign:'center' as const, fontSize:22, fontWeight:700, color:'#fff', background:'#141416', border:'1px solid #2a2a2f', borderRadius:14, outline:'none', fontFamily:'inherit', padding:'14px 0' },
         btn: { width:'100%', padding:15, background:'#6366f1', color:'#fff', border:'none', borderRadius:13, fontSize:15, fontWeight:600, cursor:'pointer', display:'flex', alignItems:'center', justifyContent:'center', gap:8, fontFamily:'inherit', marginTop:8 },
         btnOut: { width:'100%', padding:13, background:'transparent', color:'#a0a0b0', border:'1px solid #2a2a2f', borderRadius:13, fontSize:14, cursor:'pointer', fontFamily:'inherit', marginTop:8 },
         hint: { textAlign:'center' as const, fontSize:13, color:'#505060', marginTop:14 },
@@ -122,7 +118,7 @@ export default function LoginPage() {
                                    value={email} onChange={e => setEmail(e.target.value)}
                                    onKeyDown={e => e.key==='Enter' && checkEmail()} autoFocus />
                         </div>
-                        <div style={{flex:1, height:24}} />
+                        <div style={{height:24}} />
                         <button style={c.btn} onClick={checkEmail} disabled={loading}>
                             {loading ? 'Проверяем...' : 'Продолжить →'}
                         </button>
@@ -140,7 +136,7 @@ export default function LoginPage() {
                         <div style={c.otp4}>
                             {otp.map((v, i) => (
                                 <input key={i}
-                                       ref={el => otpRefs.current[i] = el}
+                                       ref={el => { otpRefs.current[i] = el }}
                                        style={c.oc} type="text" maxLength={1} inputMode="numeric" value={v}
                                        onChange={e => {
                                            const val = e.target.value.replace(/\D/,'')
@@ -151,7 +147,7 @@ export default function LoginPage() {
                                 />
                             ))}
                         </div>
-                        <div style={{flex:1, height:24}} />
+                        <div style={{height:24}} />
                         <button style={c.btn} onClick={() => {
                             if (otp.join('').length < 4) { err('Введите 4 цифры'); return }
                             go(3); setTimeout(() => document.getElementById('l-pass')?.focus(), 200)
@@ -175,7 +171,7 @@ export default function LoginPage() {
                                 {showPass ? '🙈' : '👁'}
                             </button>
                         </div>
-                        <div style={{flex:1, height:24}} />
+                        <div style={{height:24}} />
                         <button style={c.btn} onClick={doLogin} disabled={loading}>
                             {loading ? 'Входим...' : 'Войти'}
                         </button>

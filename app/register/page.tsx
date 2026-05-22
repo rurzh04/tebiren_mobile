@@ -1,13 +1,12 @@
 'use client'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 
-const API = "http://localhost:8000"
-
+const API = process.env.NEXT_PUBLIC_API_URL!
 
 export default function RegisterPage() {
     const router = useRouter()
-    const [step, setStep] = useState<1|2>(1)
+    const [step, setStep] = useState<1|2|3>(1)
     const [form, setForm] = useState({
         first_name: '', last_name: '', middle_name: '', nickname: '',
         email: '', password: '', password2: ''
@@ -16,6 +15,8 @@ export default function RegisterPage() {
     const [error, setError] = useState('')
     const [success, setSuccess] = useState('')
     const [loading, setLoading] = useState(false)
+    const [otp, setOtp] = useState(['','','',''])
+    const otpRefs = useRef<(HTMLInputElement|null)[]>([])
 
     const set = (k: string, v: string) => setForm(f => ({...f, [k]: v}))
     const err = (m: string) => { setError(m); setSuccess('') }
@@ -47,12 +48,22 @@ export default function RegisterPage() {
             })
             const d = await r.json()
             if (d.token || d.status === 200 || d.status === 201) {
-                if (d.token) document.cookie = `auth_token=${d.token}; path=/; max-age=86400`
-                ok('Аккаунт создан! Входим...')
-                setTimeout(() => { router.push('/'); router.refresh() }, 1200)
+                ok('Аккаунт создан!')
+                setOtp(['','','',''])
+                setStep(3)
             } else err(d.message?.[0] || 'Ошибка регистрации')
         } catch { err('Ошибка соединения') }
         finally { setLoading(false) }
+    }
+
+    const confirmOtp = () => {
+        if (otp.join('').length < 4) { err('Введите 4 цифры'); return }
+        router.push('/login')
+    }
+
+    const resendOtp = async () => {
+        // вызов эндпоинта повторной отправки, если есть
+        ok('Код отправлен повторно')
     }
 
     const c = {
@@ -76,14 +87,10 @@ export default function RegisterPage() {
         btnOut: { width:'100%', padding:13, background:'transparent', color:'#a0a0b0', border:'1px solid #2a2a2f', borderRadius:13, fontSize:14, cursor:'pointer', fontFamily:'inherit', marginTop:8 },
         eyeBtn: { background:'none', border:'none', color:'#505060', cursor:'pointer', padding:0 },
         hint: { textAlign:'center' as const, fontSize:13, color:'#505060', marginTop:14 },
+        chip: { background:'#1c1c1f', border:'1px solid #2a2a2f', borderRadius:20, padding:'5px 12px', display:'inline-flex', alignItems:'center', gap:6, color:'#a0a0b0', fontSize:13, marginBottom:16 },
+        otp4: { display:'flex', gap:10, marginBottom:8 },
+        oc: { flex:1, textAlign:'center' as const, fontSize:22, fontWeight:700, color:'#fff', background:'#141416', border:'1px solid #2a2a2f', borderRadius:14, outline:'none', fontFamily:'inherit', padding:'14px 0' },
     }
-
-    const Field = ({ icon, id, placeholder, type='text', val, onChange }: any) => (
-        <div style={c.field}>
-            <span style={{color:'#505060',fontSize:17}}>{icon}</span>
-            <input id={id} style={c.inp} type={type} placeholder={placeholder} value={val} onChange={e=>onChange(e.target.value)} />
-        </div>
-    )
 
     return (
         <div style={c.page}>
@@ -91,16 +98,18 @@ export default function RegisterPage() {
                 <div style={c.logoArea}>
                     <div style={c.logoBox}>⚡</div>
                     <div style={c.logoN}>Tebiren</div>
-                    <div style={c.logoS}>Создайте аккаунт</div>
+                    <div style={c.logoS}>{step === 3 ? 'Подтверждение email' : 'Создайте аккаунт'}</div>
                 </div>
 
-                <div style={c.tabRow}>
-                    <button style={c.tab(false)} onClick={() => router.push('/login')}>Вход</button>
-                    <button style={c.tab(true)} onClick={() => router.push('/register')}>Регистрация</button>
-                </div>
+                {step !== 3 && (
+                    <div style={c.tabRow}>
+                        <button style={c.tab(false)} onClick={() => router.push('/login')}>Вход</button>
+                        <button style={c.tab(true)} onClick={() => router.push('/register')}>Регистрация</button>
+                    </div>
+                )}
 
                 {error && <div style={c.errBox}>⚠ {error}</div>}
-                {success && <div style={c.okBox}>✓ {success}</div>}
+                {success && step !== 3 && <div style={c.okBox}>✓ {success}</div>}
 
                 {step === 1 && (
                     <div>
@@ -112,25 +121,24 @@ export default function RegisterPage() {
                                 <div style={c.lbl}>Имя</div>
                                 <div style={c.field}>
                                     <span style={{color:'#505060'}}>👤</span>
-                                    <input style={c.inp} type="text" placeholder="Aithzan"
-                                           value={form.first_name} onChange={e=>set('first_name',e.target.value)} />
+                                    <input style={c.inp} type="text" placeholder="Arnat"
+                                           value={form.middle_name} onChange={e=>set('middle_name',e.target.value)} />
                                 </div>
                             </div>
                             <div>
                                 <div style={c.lbl}>Фамилия</div>
                                 <div style={c.field}>
                                     <span style={{color:'#505060'}}>👤</span>
-                                    <input style={c.inp} type="text" placeholder="Erzhanuly"
-                                           value={form.last_name} onChange={e=>set('last_name',e.target.value)} />
+                                    <input style={c.inp} type="text" placeholder="Aithzan"
+                                           value={form.first_name} onChange={e=>set('first_name',e.target.value)} />
                                 </div>
                             </div>
                         </div>
-
                         <div style={c.lbl}>Отчество</div>
                         <div style={c.field}>
                             <span style={{color:'#505060'}}>👤</span>
-                            <input style={c.inp} type="text" placeholder="Arnat"
-                                   value={form.middle_name} onChange={e=>set('middle_name',e.target.value)} />
+                            <input style={c.inp} type="text" placeholder="Erzhanuly"
+                                   value={form.last_name} onChange={e=>set('last_name',e.target.value)} />
                         </div>
 
                         <div style={c.lbl}>Никнейм</div>
@@ -146,6 +154,7 @@ export default function RegisterPage() {
                             Уже есть аккаунт? <a href="/login" style={{color:'#6366f1', textDecoration:'none', fontWeight:500}}>Войти</a>
                         </div>
                     </div>
+
                 )}
 
                 {step === 2 && (
@@ -181,6 +190,47 @@ export default function RegisterPage() {
                             {loading ? 'Создаём аккаунт...' : 'Зарегистрироваться'}
                         </button>
                         <button style={c.btnOut} onClick={()=>setStep(1)}>← Назад</button>
+                    </div>
+                )}
+
+                {step === 3 && (
+                    <div style={{display:'flex', flexDirection:'column', alignItems:'center', textAlign:'center'}}>
+                        <div style={{width:56, height:56, borderRadius:'50%', background:'#1a1a2e', border:'1.5px solid #6366f1', display:'flex', alignItems:'center', justifyContent:'center', marginBottom:20, fontSize:24}}>
+                            ✉️
+                        </div>
+                        <p style={c.title}>Проверьте<br/>почту</p>
+                        <p style={{...c.sub, textAlign:'center'}}>
+                            Отправили 4-значный код на
+                        </p>
+                        <div style={c.chip}>@ {form.email}</div>
+
+                        {error && <div style={{...c.errBox, width:'100%'}}>⚠ {error}</div>}
+                        {success && <div style={{...c.okBox, width:'100%'}}>✓ {success}</div>}
+
+                        <div style={{...c.otp4, width:'100%'}}>
+                            {otp.map((v, i) => (
+                                <input key={i}
+                                       ref={el => { otpRefs.current[i] = el }}
+                                       style={c.oc} type="text" maxLength={1} inputMode="numeric" value={v}
+                                       onChange={e => {
+                                           const val = e.target.value.replace(/\D/,'')
+                                           const next = [...otp]; next[i] = val; setOtp(next)
+                                           if (val && i < 3) otpRefs.current[i+1]?.focus()
+                                       }}
+                                       onKeyDown={e => { if (e.key==='Backspace' && !v && i>0) otpRefs.current[i-1]?.focus() }}
+                                />
+                            ))}
+                        </div>
+                        <p style={{fontSize:12, color:'#404050', marginBottom:24}}>Введите код из письма</p>
+
+                        <button style={{...c.btn, marginTop:0}} onClick={confirmOtp}>
+                            Подтвердить и войти →
+                        </button>
+                        <button style={c.btnOut} onClick={resendOtp}>Отправить снова</button>
+
+                        <p style={{fontSize:12, color:'#303040', marginTop:16, lineHeight:1.6}}>
+                            Не нашли письмо? Проверьте папку «Спам»
+                        </p>
                     </div>
                 )}
             </div>
