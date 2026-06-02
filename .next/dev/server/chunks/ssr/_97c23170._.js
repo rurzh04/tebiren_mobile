@@ -28,68 +28,71 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$gift$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Gift$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/gift.js [app-ssr] (ecmascript) <export default as Gift>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/user.js [app-ssr] (ecmascript) <export default as User>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$contexts$2f$language$2d$context$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/contexts/language-context.tsx [app-ssr] (ecmascript)");
 "use client";
 ;
 ;
 ;
-const navItems = [
-    {
-        id: "home",
-        label: "главная",
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$house$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Home$3e$__["Home"], {
-            className: "w-5 h-5"
-        }, void 0, false, {
-            fileName: "[project]/components/bottom-navigation.tsx",
-            lineNumber: 15,
-            columnNumber: 41
-        }, ("TURBOPACK compile-time value", void 0))
-    },
-    {
-        id: "promotions",
-        label: "акции",
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$flame$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Flame$3e$__["Flame"], {
-            className: "w-5 h-5"
-        }, void 0, false, {
-            fileName: "[project]/components/bottom-navigation.tsx",
-            lineNumber: 16,
-            columnNumber: 45
-        }, ("TURBOPACK compile-time value", void 0))
-    },
-    {
-        id: "bookings",
-        label: "брони",
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
-            className: "w-5 h-5"
-        }, void 0, false, {
-            fileName: "[project]/components/bottom-navigation.tsx",
-            lineNumber: 17,
-            columnNumber: 43
-        }, ("TURBOPACK compile-time value", void 0))
-    },
-    {
-        id: "coupons",
-        label: "купоны",
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$gift$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Gift$3e$__["Gift"], {
-            className: "w-5 h-5"
-        }, void 0, false, {
-            fileName: "[project]/components/bottom-navigation.tsx",
-            lineNumber: 18,
-            columnNumber: 43
-        }, ("TURBOPACK compile-time value", void 0))
-    },
-    {
-        id: "profile",
-        label: "профиль",
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
-            className: "w-5 h-5"
-        }, void 0, false, {
-            fileName: "[project]/components/bottom-navigation.tsx",
-            lineNumber: 19,
-            columnNumber: 44
-        }, ("TURBOPACK compile-time value", void 0))
-    }
-];
+;
 function BottomNavigation({ activeTab, onTabChange }) {
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$contexts$2f$language$2d$context$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLang"])();
+    const navItems = [
+        {
+            id: "home",
+            label: t.nav.home,
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$house$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Home$3e$__["Home"], {
+                className: "w-5 h-5"
+            }, void 0, false, {
+                fileName: "[project]/components/bottom-navigation.tsx",
+                lineNumber: 18,
+                columnNumber: 55
+            }, this)
+        },
+        {
+            id: "promotions",
+            label: t.nav.promotions,
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$flame$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Flame$3e$__["Flame"], {
+                className: "w-5 h-5"
+            }, void 0, false, {
+                fileName: "[project]/components/bottom-navigation.tsx",
+                lineNumber: 19,
+                columnNumber: 67
+            }, this)
+        },
+        {
+            id: "bookings",
+            label: t.nav.bookings,
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
+                className: "w-5 h-5"
+            }, void 0, false, {
+                fileName: "[project]/components/bottom-navigation.tsx",
+                lineNumber: 20,
+                columnNumber: 63
+            }, this)
+        },
+        {
+            id: "coupons",
+            label: t.nav.coupons,
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$gift$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Gift$3e$__["Gift"], {
+                className: "w-5 h-5"
+            }, void 0, false, {
+                fileName: "[project]/components/bottom-navigation.tsx",
+                lineNumber: 21,
+                columnNumber: 61
+            }, this)
+        },
+        {
+            id: "profile",
+            label: t.nav.profile,
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
+                className: "w-5 h-5"
+            }, void 0, false, {
+                fileName: "[project]/components/bottom-navigation.tsx",
+                lineNumber: 22,
+                columnNumber: 61
+            }, this)
+        }
+    ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
         className: "fixed bottom-0 left-0 right-0 z-40 bg-card/95 backdrop-blur-lg border-t border-border safe-area-inset-bottom",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -103,32 +106,32 @@ function BottomNavigation({ activeTab, onTabChange }) {
                             children: item.icon
                         }, void 0, false, {
                             fileName: "[project]/components/bottom-navigation.tsx",
-                            lineNumber: 42,
-                            columnNumber: 13
+                            lineNumber: 39,
+                            columnNumber: 17
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             className: "text-xs font-medium",
                             children: item.label
                         }, void 0, false, {
                             fileName: "[project]/components/bottom-navigation.tsx",
-                            lineNumber: 48,
-                            columnNumber: 13
+                            lineNumber: 45,
+                            columnNumber: 17
                         }, this)
                     ]
                 }, item.id, true, {
                     fileName: "[project]/components/bottom-navigation.tsx",
-                    lineNumber: 32,
-                    columnNumber: 11
+                    lineNumber: 29,
+                    columnNumber: 15
                 }, this))
         }, void 0, false, {
             fileName: "[project]/components/bottom-navigation.tsx",
-            lineNumber: 30,
-            columnNumber: 7
+            lineNumber: 27,
+            columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/bottom-navigation.tsx",
-        lineNumber: 29,
-        columnNumber: 5
+        lineNumber: 26,
+        columnNumber: 7
     }, this);
 }
 }),
@@ -262,101 +265,104 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/calendar.js [app-ssr] (ecmascript) <export default as Calendar>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$square$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageSquare$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/message-square.js [app-ssr] (ecmascript) <export default as MessageSquare>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$contexts$2f$language$2d$context$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/contexts/language-context.tsx [app-ssr] (ecmascript)");
 "use client";
 ;
 ;
 ;
-const quickActions = [
-    {
-        id: "workspace",
-        label: "рабочее место",
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$monitor$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Monitor$3e$__["Monitor"], {
-            className: "w-10 h-10"
-        }, void 0, false, {
-            fileName: "[project]/components/quick-actions.tsx",
-            lineNumber: 18,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0)),
-        color: "text-pink-400",
-        bgColor: "bg-gradient-to-br from-slate-700 to-slate-800"
-    },
-    {
-        id: "conference",
-        label: "конференц-залы",
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"], {
-            className: "w-10 h-10"
-        }, void 0, false, {
-            fileName: "[project]/components/quick-actions.tsx",
-            lineNumber: 25,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0)),
-        color: "text-pink-400",
-        bgColor: "bg-gradient-to-br from-slate-700 to-slate-800"
-    }
-];
-const smallActions = [
-    {
-        id: "promo",
-        label: "акции",
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$flame$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Flame$3e$__["Flame"], {
-            className: "w-6 h-6"
-        }, void 0, false, {
-            fileName: "[project]/components/quick-actions.tsx",
-            lineNumber: 32,
-            columnNumber: 40
-        }, ("TURBOPACK compile-time value", void 0)),
-        color: "text-orange-400 bg-orange-400/20"
-    },
-    {
-        id: "biometry",
-        label: "биометрия",
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$fingerprint$2d$pattern$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Fingerprint$3e$__["Fingerprint"], {
-            className: "w-6 h-6"
-        }, void 0, false, {
-            fileName: "[project]/components/quick-actions.tsx",
-            lineNumber: 33,
-            columnNumber: 47
-        }, ("TURBOPACK compile-time value", void 0)),
-        color: "text-teal-400 bg-teal-400/20"
-    },
-    {
-        id: "community",
-        label: "сообщество",
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__["Heart"], {
-            className: "w-6 h-6"
-        }, void 0, false, {
-            fileName: "[project]/components/quick-actions.tsx",
-            lineNumber: 34,
-            columnNumber: 49
-        }, ("TURBOPACK compile-time value", void 0)),
-        color: "text-pink-400 bg-pink-400/20"
-    },
-    {
-        id: "events",
-        label: "события",
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
-            className: "w-6 h-6"
-        }, void 0, false, {
-            fileName: "[project]/components/quick-actions.tsx",
-            lineNumber: 35,
-            columnNumber: 43
-        }, ("TURBOPACK compile-time value", void 0)),
-        color: "text-blue-400 bg-blue-400/20"
-    },
-    {
-        id: "chat",
-        label: "переговор...",
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$square$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageSquare$3e$__["MessageSquare"], {
-            className: "w-6 h-6"
-        }, void 0, false, {
-            fileName: "[project]/components/quick-actions.tsx",
-            lineNumber: 36,
-            columnNumber: 46
-        }, ("TURBOPACK compile-time value", void 0)),
-        color: "text-purple-400 bg-purple-400/20"
-    }
-];
+;
 function QuickActions({ onActionClick }) {
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$contexts$2f$language$2d$context$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLang"])();
+    const quickActions = [
+        {
+            id: "workspace",
+            label: t.quickActions.workspace,
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$monitor$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Monitor$3e$__["Monitor"], {
+                className: "w-10 h-10"
+            }, void 0, false, {
+                fileName: "[project]/components/quick-actions.tsx",
+                lineNumber: 18,
+                columnNumber: 13
+            }, this),
+            color: "text-pink-400",
+            bgColor: "bg-gradient-to-br from-slate-700 to-slate-800"
+        },
+        {
+            id: "conference",
+            label: t.quickActions.conference,
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"], {
+                className: "w-10 h-10"
+            }, void 0, false, {
+                fileName: "[project]/components/quick-actions.tsx",
+                lineNumber: 25,
+                columnNumber: 13
+            }, this),
+            color: "text-pink-400",
+            bgColor: "bg-gradient-to-br from-slate-700 to-slate-800"
+        }
+    ];
+    const smallActions = [
+        {
+            id: "promo",
+            label: t.quickActions.promo,
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$flame$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Flame$3e$__["Flame"], {
+                className: "w-6 h-6"
+            }, void 0, false, {
+                fileName: "[project]/components/quick-actions.tsx",
+                lineNumber: 32,
+                columnNumber: 55
+            }, this),
+            color: "text-orange-400 bg-orange-400/20"
+        },
+        {
+            id: "biometry",
+            label: t.quickActions.biometry,
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$fingerprint$2d$pattern$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Fingerprint$3e$__["Fingerprint"], {
+                className: "w-6 h-6"
+            }, void 0, false, {
+                fileName: "[project]/components/quick-actions.tsx",
+                lineNumber: 33,
+                columnNumber: 61
+            }, this),
+            color: "text-teal-400 bg-teal-400/20"
+        },
+        {
+            id: "community",
+            label: t.quickActions.community,
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__["Heart"], {
+                className: "w-6 h-6"
+            }, void 0, false, {
+                fileName: "[project]/components/quick-actions.tsx",
+                lineNumber: 34,
+                columnNumber: 63
+            }, this),
+            color: "text-pink-400 bg-pink-400/20"
+        },
+        {
+            id: "events",
+            label: t.quickActions.events,
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
+                className: "w-6 h-6"
+            }, void 0, false, {
+                fileName: "[project]/components/quick-actions.tsx",
+                lineNumber: 35,
+                columnNumber: 57
+            }, this),
+            color: "text-blue-400 bg-blue-400/20"
+        },
+        {
+            id: "chat",
+            label: t.quickActions.chat,
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$square$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageSquare$3e$__["MessageSquare"], {
+                className: "w-6 h-6"
+            }, void 0, false, {
+                fileName: "[project]/components/quick-actions.tsx",
+                lineNumber: 36,
+                columnNumber: 53
+            }, this),
+            color: "text-purple-400 bg-purple-400/20"
+        }
+    ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "space-y-4",
         children: [
@@ -373,71 +379,71 @@ function QuickActions({ onActionClick }) {
                                     children: action.icon
                                 }, void 0, false, {
                                     fileName: "[project]/components/quick-actions.tsx",
-                                    lineNumber: 59,
-                                    columnNumber: 15
+                                    lineNumber: 54,
+                                    columnNumber: 19
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/quick-actions.tsx",
-                                lineNumber: 58,
-                                columnNumber: 13
+                                lineNumber: 53,
+                                columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-foreground text-sm mt-8",
+                                className: "text-sm font-medium text-white mt-8",
                                 children: action.label
                             }, void 0, false, {
                                 fileName: "[project]/components/quick-actions.tsx",
-                                lineNumber: 63,
-                                columnNumber: 13
+                                lineNumber: 58,
+                                columnNumber: 17
                             }, this)
                         ]
                     }, action.id, true, {
                         fileName: "[project]/components/quick-actions.tsx",
-                        lineNumber: 49,
-                        columnNumber: 11
+                        lineNumber: 44,
+                        columnNumber: 15
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/quick-actions.tsx",
-                lineNumber: 47,
-                columnNumber: 7
+                lineNumber: 42,
+                columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex gap-3 overflow-x-auto hide-scrollbar pb-2",
+                className: "grid grid-cols-5 gap-2",
                 children: smallActions.map((action)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>onActionClick(action.id),
-                        className: "flex flex-col items-center gap-2 min-w-[72px]",
+                        className: "flex flex-col items-center gap-1",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("w-14 h-14 rounded-2xl flex items-center justify-center", action.color),
+                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("w-12 h-12 rounded-xl flex items-center justify-center", action.color),
                                 children: action.icon
                             }, void 0, false, {
                                 fileName: "[project]/components/quick-actions.tsx",
-                                lineNumber: 76,
-                                columnNumber: 13
+                                lineNumber: 71,
+                                columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-xs text-muted-foreground whitespace-nowrap",
+                                className: "text-xs text-muted-foreground text-center leading-tight",
                                 children: action.label
                             }, void 0, false, {
                                 fileName: "[project]/components/quick-actions.tsx",
-                                lineNumber: 82,
-                                columnNumber: 13
+                                lineNumber: 74,
+                                columnNumber: 17
                             }, this)
                         ]
                     }, action.id, true, {
                         fileName: "[project]/components/quick-actions.tsx",
-                        lineNumber: 71,
-                        columnNumber: 11
+                        lineNumber: 66,
+                        columnNumber: 15
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/quick-actions.tsx",
-                lineNumber: 69,
-                columnNumber: 7
+                lineNumber: 64,
+                columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/quick-actions.tsx",
-        lineNumber: 45,
-        columnNumber: 5
+        lineNumber: 40,
+        columnNumber: 7
     }, this);
 }
 }),
@@ -1358,7 +1364,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$credit$2d$card$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CreditCard$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/credit-card.js [app-ssr] (ecmascript) <export default as CreditCard>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check-big.js [app-ssr] (ecmascript) <export default as CheckCircle>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$contexts$2f$language$2d$context$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/contexts/language-context.tsx [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -1397,6 +1405,7 @@ const mockNotifications = [
     }
 ];
 function NotificationsPanel({ isOpen, onClose }) {
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$contexts$2f$language$2d$context$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLang"])();
     if (!isOpen) return null;
     const getIcon = (type)=>{
         switch(type){
@@ -1405,32 +1414,32 @@ function NotificationsPanel({ isOpen, onClose }) {
                     className: "w-5 h-5 text-primary"
                 }, void 0, false, {
                     fileName: "[project]/components/notifications-panel.tsx",
-                    lineNumber: 61,
-                    columnNumber: 16
+                    lineNumber: 34,
+                    columnNumber: 30
                 }, this);
             case "promo":
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$gift$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Gift$3e$__["Gift"], {
                     className: "w-5 h-5 text-orange-400"
                 }, void 0, false, {
                     fileName: "[project]/components/notifications-panel.tsx",
-                    lineNumber: 63,
-                    columnNumber: 16
+                    lineNumber: 35,
+                    columnNumber: 28
                 }, this);
             case "payment":
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$credit$2d$card$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CreditCard$3e$__["CreditCard"], {
                     className: "w-5 h-5 text-green-400"
                 }, void 0, false, {
                     fileName: "[project]/components/notifications-panel.tsx",
-                    lineNumber: 65,
-                    columnNumber: 16
+                    lineNumber: 36,
+                    columnNumber: 30
                 }, this);
             case "system":
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__["CheckCircle"], {
                     className: "w-5 h-5 text-blue-400"
                 }, void 0, false, {
                     fileName: "[project]/components/notifications-panel.tsx",
-                    lineNumber: 67,
-                    columnNumber: 16
+                    lineNumber: 37,
+                    columnNumber: 29
                 }, this);
         }
     };
@@ -1452,30 +1461,30 @@ function NotificationsPanel({ isOpen, onClose }) {
                                     className: "w-5 h-5"
                                 }, void 0, false, {
                                     fileName: "[project]/components/notifications-panel.tsx",
-                                    lineNumber: 81,
-                                    columnNumber: 13
+                                    lineNumber: 51,
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     className: "text-lg font-semibold",
-                                    children: "Уведомления"
+                                    children: t.notifications.title
                                 }, void 0, false, {
                                     fileName: "[project]/components/notifications-panel.tsx",
-                                    lineNumber: 82,
-                                    columnNumber: 13
+                                    lineNumber: 52,
+                                    columnNumber: 15
                                 }, this),
                                 unreadCount > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "px-2 py-0.5 rounded-full bg-primary text-primary-foreground text-xs font-medium",
                                     children: unreadCount
                                 }, void 0, false, {
                                     fileName: "[project]/components/notifications-panel.tsx",
-                                    lineNumber: 84,
-                                    columnNumber: 15
+                                    lineNumber: 54,
+                                    columnNumber: 19
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/notifications-panel.tsx",
-                            lineNumber: 80,
-                            columnNumber: 11
+                            lineNumber: 50,
+                            columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: onClose,
@@ -1484,19 +1493,19 @@ function NotificationsPanel({ isOpen, onClose }) {
                                 className: "w-5 h-5"
                             }, void 0, false, {
                                 fileName: "[project]/components/notifications-panel.tsx",
-                                lineNumber: 93,
-                                columnNumber: 13
+                                lineNumber: 60,
+                                columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/notifications-panel.tsx",
-                            lineNumber: 89,
-                            columnNumber: 11
+                            lineNumber: 59,
+                            columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/notifications-panel.tsx",
-                    lineNumber: 79,
-                    columnNumber: 9
+                    lineNumber: 49,
+                    columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "overflow-y-auto h-[calc(100%-64px)]",
@@ -1510,8 +1519,8 @@ function NotificationsPanel({ isOpen, onClose }) {
                                         children: getIcon(notification.type)
                                     }, void 0, false, {
                                         fileName: "[project]/components/notifications-panel.tsx",
-                                        lineNumber: 107,
-                                        columnNumber: 17
+                                        lineNumber: 74,
+                                        columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex-1 min-w-0",
@@ -1524,70 +1533,70 @@ function NotificationsPanel({ isOpen, onClose }) {
                                                         children: notification.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/notifications-panel.tsx",
-                                                        lineNumber: 112,
-                                                        columnNumber: 21
+                                                        lineNumber: 79,
+                                                        columnNumber: 25
                                                     }, this),
                                                     !notification.read && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "w-2 h-2 rounded-full bg-primary flex-shrink-0 mt-2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/notifications-panel.tsx",
-                                                        lineNumber: 119,
-                                                        columnNumber: 23
+                                                        lineNumber: 83,
+                                                        columnNumber: 29
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/notifications-panel.tsx",
-                                                lineNumber: 111,
-                                                columnNumber: 19
+                                                lineNumber: 78,
+                                                columnNumber: 23
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "text-sm text-muted-foreground mt-1",
                                                 children: notification.message
                                             }, void 0, false, {
                                                 fileName: "[project]/components/notifications-panel.tsx",
-                                                lineNumber: 122,
-                                                columnNumber: 19
+                                                lineNumber: 86,
+                                                columnNumber: 23
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "text-xs text-muted-foreground mt-2",
                                                 children: notification.time
                                             }, void 0, false, {
                                                 fileName: "[project]/components/notifications-panel.tsx",
-                                                lineNumber: 125,
-                                                columnNumber: 19
+                                                lineNumber: 87,
+                                                columnNumber: 23
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/notifications-panel.tsx",
-                                        lineNumber: 110,
-                                        columnNumber: 17
+                                        lineNumber: 77,
+                                        columnNumber: 21
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/notifications-panel.tsx",
-                                lineNumber: 106,
-                                columnNumber: 15
+                                lineNumber: 73,
+                                columnNumber: 19
                             }, this)
                         }, notification.id, false, {
                             fileName: "[project]/components/notifications-panel.tsx",
-                            lineNumber: 99,
-                            columnNumber: 13
+                            lineNumber: 66,
+                            columnNumber: 17
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/notifications-panel.tsx",
-                    lineNumber: 97,
-                    columnNumber: 9
+                    lineNumber: 64,
+                    columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/notifications-panel.tsx",
-            lineNumber: 75,
-            columnNumber: 7
+            lineNumber: 45,
+            columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/notifications-panel.tsx",
-        lineNumber: 74,
-        columnNumber: 5
+        lineNumber: 44,
+        columnNumber: 7
     }, this);
 }
 }),
@@ -2109,7 +2118,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$gallery$2d$mod
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$notifications$2d$panel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/notifications-panel.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$booking$2d$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/booking-form.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$contexts$2f$language$2d$context$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/contexts/language-context.tsx [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -2148,6 +2159,7 @@ const locationNames = {
     sputnik: "Sputnik"
 };
 function HomePage({ onNavigate }) {
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$contexts$2f$language$2d$context$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLang"])();
     const [selectedLocation, setSelectedLocation] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("tebiren");
     const [selectedPlan, setSelectedPlan] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const [showConferenceRooms, setShowConferenceRooms] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -2211,12 +2223,12 @@ function HomePage({ onNavigate }) {
                                     className: "w-5 h-5 text-muted-foreground"
                                 }, void 0, false, {
                                     fileName: "[project]/components/home-page.tsx",
-                                    lineNumber: 89,
-                                    columnNumber: 15
+                                    lineNumber: 91,
+                                    columnNumber: 29
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                     type: "text",
-                                    placeholder: "Поиск...",
+                                    placeholder: t.home.search,
                                     value: searchQuery,
                                     onChange: (e)=>setSearchQuery(e.target.value),
                                     autoFocus: true,
@@ -2226,14 +2238,14 @@ function HomePage({ onNavigate }) {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/components/home-page.tsx",
-                                    lineNumber: 90,
-                                    columnNumber: 15
+                                    lineNumber: 92,
+                                    columnNumber: 29
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/home-page.tsx",
-                            lineNumber: 88,
-                            columnNumber: 13
+                            lineNumber: 90,
+                            columnNumber: 25
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: ()=>setShowSearch(true),
                             className: "p-2 rounded-full hover:bg-secondary transition-colors",
@@ -2241,18 +2253,18 @@ function HomePage({ onNavigate }) {
                                 className: "w-5 h-5 text-muted-foreground"
                             }, void 0, false, {
                                 fileName: "[project]/components/home-page.tsx",
-                                lineNumber: 107,
-                                columnNumber: 15
+                                lineNumber: 109,
+                                columnNumber: 29
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/home-page.tsx",
-                            lineNumber: 103,
-                            columnNumber: 13
+                            lineNumber: 105,
+                            columnNumber: 25
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/home-page.tsx",
-                        lineNumber: 86,
-                        columnNumber: 9
+                        lineNumber: 88,
+                        columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>setShowNotifications(true),
@@ -2262,27 +2274,27 @@ function HomePage({ onNavigate }) {
                                 className: "w-5 h-5"
                             }, void 0, false, {
                                 fileName: "[project]/components/home-page.tsx",
-                                lineNumber: 115,
-                                columnNumber: 11
+                                lineNumber: 117,
+                                columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"
                             }, void 0, false, {
                                 fileName: "[project]/components/home-page.tsx",
-                                lineNumber: 116,
-                                columnNumber: 11
+                                lineNumber: 118,
+                                columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/home-page.tsx",
-                        lineNumber: 111,
-                        columnNumber: 9
+                        lineNumber: 113,
+                        columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/home-page.tsx",
-                lineNumber: 85,
-                columnNumber: 7
+                lineNumber: 87,
+                columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "px-4 pt-4",
@@ -2298,48 +2310,48 @@ function HomePage({ onNavigate }) {
                                 className: "object-cover"
                             }, void 0, false, {
                                 fileName: "[project]/components/home-page.tsx",
-                                lineNumber: 134,
-                                columnNumber: 15
+                                lineNumber: 136,
+                                columnNumber: 29
                             }, this)
                         }, loc.id, false, {
                             fileName: "[project]/components/home-page.tsx",
-                            lineNumber: 124,
-                            columnNumber: 13
+                            lineNumber: 126,
+                            columnNumber: 25
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/home-page.tsx",
-                    lineNumber: 122,
-                    columnNumber: 9
+                    lineNumber: 124,
+                    columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/home-page.tsx",
-                lineNumber: 121,
-                columnNumber: 7
+                lineNumber: 123,
+                columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "px-4 mt-4 flex items-center justify-between",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "text-muted-foreground",
-                        children: "выбранный объект:"
+                        children: t.home.selectedObject
                     }, void 0, false, {
                         fileName: "[project]/components/home-page.tsx",
-                        lineNumber: 147,
-                        columnNumber: 9
+                        lineNumber: 149,
+                        columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$location$2d$selector$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["LocationSelector"], {
                         selectedLocation: selectedLocation,
                         onLocationChange: setSelectedLocation
                     }, void 0, false, {
                         fileName: "[project]/components/home-page.tsx",
-                        lineNumber: 148,
-                        columnNumber: 9
+                        lineNumber: 150,
+                        columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/home-page.tsx",
-                lineNumber: 146,
-                columnNumber: 7
+                lineNumber: 148,
+                columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "px-4 mt-6 flex items-center justify-between",
@@ -2351,37 +2363,37 @@ function HomePage({ onNavigate }) {
                                 children: locationNames[selectedLocation] || "Tebiren"
                             }, void 0, false, {
                                 fileName: "[project]/components/home-page.tsx",
-                                lineNumber: 157,
-                                columnNumber: 11
+                                lineNumber: 159,
+                                columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-muted-foreground text-sm",
-                                children: "бизнес-парк"
+                                children: t.home.businessPark
                             }, void 0, false, {
                                 fileName: "[project]/components/home-page.tsx",
-                                lineNumber: 160,
-                                columnNumber: 11
+                                lineNumber: 162,
+                                columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/home-page.tsx",
-                        lineNumber: 156,
-                        columnNumber: 9
+                        lineNumber: 158,
+                        columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>setShowGallery(true),
                         className: "px-4 py-2 border border-border rounded-full text-sm hover:bg-secondary transition-colors",
-                        children: "галерея"
+                        children: t.home.gallery
                     }, void 0, false, {
                         fileName: "[project]/components/home-page.tsx",
-                        lineNumber: 162,
-                        columnNumber: 9
+                        lineNumber: 164,
+                        columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/home-page.tsx",
-                lineNumber: 155,
-                columnNumber: 7
+                lineNumber: 157,
+                columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "px-4 mt-6",
@@ -2389,13 +2401,13 @@ function HomePage({ onNavigate }) {
                     onActionClick: handleActionClick
                 }, void 0, false, {
                     fileName: "[project]/components/home-page.tsx",
-                    lineNumber: 172,
-                    columnNumber: 9
+                    lineNumber: 174,
+                    columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/home-page.tsx",
-                lineNumber: 171,
-                columnNumber: 7
+                lineNumber: 173,
+                columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "px-4 mt-8",
@@ -2403,28 +2415,28 @@ function HomePage({ onNavigate }) {
                     onPlanSelect: handlePlanSelect
                 }, void 0, false, {
                     fileName: "[project]/components/home-page.tsx",
-                    lineNumber: 177,
-                    columnNumber: 9
+                    lineNumber: 179,
+                    columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/home-page.tsx",
-                lineNumber: 176,
-                columnNumber: 7
+                lineNumber: 178,
+                columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "px-4 mt-6",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     className: "text-primary text-sm",
-                    children: "доступно после покупки тарифа"
+                    children: t.home.availableAfterPurchase
                 }, void 0, false, {
                     fileName: "[project]/components/home-page.tsx",
-                    lineNumber: 182,
-                    columnNumber: 9
+                    lineNumber: 184,
+                    columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/home-page.tsx",
-                lineNumber: 181,
-                columnNumber: 7
+                lineNumber: 183,
+                columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$plan$2d$detail$2d$modal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["PlanDetailModal"], {
                 planId: selectedPlan,
@@ -2432,8 +2444,8 @@ function HomePage({ onNavigate }) {
                 onBookNow: handleBookNow
             }, void 0, false, {
                 fileName: "[project]/components/home-page.tsx",
-                lineNumber: 188,
-                columnNumber: 7
+                lineNumber: 190,
+                columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$conference$2d$rooms$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ConferenceRooms"], {
                 isOpen: showConferenceRooms,
@@ -2448,8 +2460,8 @@ function HomePage({ onNavigate }) {
                 }
             }, void 0, false, {
                 fileName: "[project]/components/home-page.tsx",
-                lineNumber: 195,
-                columnNumber: 7
+                lineNumber: 197,
+                columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$gallery$2d$modal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["GalleryModal"], {
                 isOpen: showGallery,
@@ -2457,16 +2469,16 @@ function HomePage({ onNavigate }) {
                 locationName: locationNames[selectedLocation] || "Tebiren"
             }, void 0, false, {
                 fileName: "[project]/components/home-page.tsx",
-                lineNumber: 206,
-                columnNumber: 7
+                lineNumber: 208,
+                columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$notifications$2d$panel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NotificationsPanel"], {
                 isOpen: showNotifications,
                 onClose: ()=>setShowNotifications(false)
             }, void 0, false, {
                 fileName: "[project]/components/home-page.tsx",
-                lineNumber: 213,
-                columnNumber: 7
+                lineNumber: 215,
+                columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$booking$2d$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["BookingForm"], {
                 isOpen: showBookingForm,
@@ -2476,14 +2488,14 @@ function HomePage({ onNavigate }) {
                 onConfirm: handleBookingConfirm
             }, void 0, false, {
                 fileName: "[project]/components/home-page.tsx",
-                lineNumber: 219,
-                columnNumber: 7
+                lineNumber: 221,
+                columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/home-page.tsx",
-        lineNumber: 83,
-        columnNumber: 5
+        lineNumber: 85,
+        columnNumber: 9
     }, this);
 }
 }),
@@ -2505,7 +2517,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/heart.js [app-ssr] (ecmascript) <export default as Heart>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$contexts$2f$language$2d$context$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/contexts/language-context.tsx [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -2520,7 +2534,7 @@ const promotions = [
         dateRange: "12.03.2026 - 12.05.2026",
         daysLeft: 56,
         description: "Участвуйте в акции «Сезон Больших Подарков» и получите возможность выигра...",
-        fullDescription: "Участвуйте в акции «Сезон Больших Подарков» и получите возможность выиграть ценные призы! Каждый день мы разыгрываем подарки среди наших резидентов. Чем больше вы работаете в коворкинге, тем больше шансов на победу!",
+        fullDescription: "Участвуйте в акции «Сезон Больших Подарков» и получите возможность выиграть ценные призы! Каждый день мы разыгрываем подарки среди наших резидентов.",
         image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&auto=format&fit=crop&q=80",
         terms: [
             "Акция действует для всех резидентов Sputnik",
@@ -2537,7 +2551,7 @@ const promotions = [
         dateRange: "01.06.2026 - 31.08.2026",
         daysLeft: 120,
         description: "Забронируйте рабочее место на лето и получите скидку 20% на все тарифы...",
-        fullDescription: "Забронируйте рабочее место на лето и получите скидку 20% на все тарифы! Работайте в комфорте с кондиционером, наслаждайтесь прохладными напитками в нашем кофе-поинте и проводите встречи в современных переговорных.",
+        fullDescription: "Забронируйте рабочее место на лето и получите скидку 20% на все тарифы! Работайте в комфорте с кондиционером.",
         image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&auto=format&fit=crop&q=80",
         terms: [
             "Скидка применяется автоматически при оплате",
@@ -2554,7 +2568,7 @@ const promotions = [
         dateRange: "01.03.2026 - 31.12.2026",
         daysLeft: 289,
         description: "Приведите друга и получите бесплатный день работы для вас обоих...",
-        fullDescription: "Пригласите друга в наш коворкинг и получите бонусы! При первой покупке вашего друга вы оба получаете по одному бесплатному дню. Количество приглашений не ограничено!",
+        fullDescription: "Пригласите друга в наш коворкинг и получите бонусы! При первой покупке вашего друга вы оба получаете по одному бесплатному дню.",
         image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&auto=format&fit=crop&q=80",
         terms: [
             "Друг должен быть новым клиентом",
@@ -2564,17 +2578,18 @@ const promotions = [
         ]
     }
 ];
-const filters = [
-    "все объекты",
-    "Tebiren",
-    "SmArt.Point"
-];
 function PromotionsPage() {
-    const [selectedFilter, setSelectedFilter] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("все объекты");
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$contexts$2f$language$2d$context$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLang"])();
+    const filters = [
+        t.promotions.allLocations,
+        "Tebiren",
+        "SmArt.Point"
+    ];
+    const [selectedFilter, setSelectedFilter] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(t.promotions.allLocations);
     const [showFilterMenu, setShowFilterMenu] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [selectedPromo, setSelectedPromo] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const [likedPromos, setLikedPromos] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
-    const filteredPromos = selectedFilter === "все объекты" ? promotions : promotions.filter((p)=>p.location === selectedFilter);
+    const filteredPromos = selectedFilter === t.promotions.allLocations ? promotions : promotions.filter((p)=>p.location === selectedFilter);
     const toggleLike = (promoId)=>{
         setLikedPromos((prev)=>prev.includes(promoId) ? prev.filter((id)=>id !== promoId) : [
                 ...prev,
@@ -2596,16 +2611,16 @@ function PromotionsPage() {
                 className: "px-4 pt-6 pb-4",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                     className: "text-xl font-medium text-center",
-                    children: "акции"
+                    children: t.promotions.title
                 }, void 0, false, {
                     fileName: "[project]/components/promotions-page.tsx",
-                    lineNumber: 108,
-                    columnNumber: 9
+                    lineNumber: 74,
+                    columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/promotions-page.tsx",
-                lineNumber: 107,
-                columnNumber: 7
+                lineNumber: 73,
+                columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "px-4 mb-6 flex items-center justify-between",
@@ -2613,19 +2628,20 @@ function PromotionsPage() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "text-foreground",
                         children: [
-                            "акций: ",
+                            t.promotions.title,
+                            ": ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "font-semibold",
                                 children: filteredPromos.length
                             }, void 0, false, {
                                 fileName: "[project]/components/promotions-page.tsx",
-                                lineNumber: 114,
-                                columnNumber: 18
+                                lineNumber: 79,
+                                columnNumber: 33
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/promotions-page.tsx",
-                        lineNumber: 113,
+                        lineNumber: 78,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2639,21 +2655,21 @@ function PromotionsPage() {
                                         children: selectedFilter
                                     }, void 0, false, {
                                         fileName: "[project]/components/promotions-page.tsx",
-                                        lineNumber: 121,
-                                        columnNumber: 13
+                                        lineNumber: 83,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
                                         className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("w-4 h-4 transition-transform", showFilterMenu && "rotate-180")
                                     }, void 0, false, {
                                         fileName: "[project]/components/promotions-page.tsx",
-                                        lineNumber: 122,
-                                        columnNumber: 13
+                                        lineNumber: 84,
+                                        columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/promotions-page.tsx",
-                                lineNumber: 117,
-                                columnNumber: 11
+                                lineNumber: 82,
+                                columnNumber: 13
                             }, this),
                             showFilterMenu && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "absolute top-full right-0 mt-2 w-48 bg-card rounded-xl shadow-lg border border-border overflow-hidden z-10",
@@ -2666,43 +2682,193 @@ function PromotionsPage() {
                                         children: filter
                                     }, filter, false, {
                                         fileName: "[project]/components/promotions-page.tsx",
-                                        lineNumber: 128,
-                                        columnNumber: 17
+                                        lineNumber: 89,
+                                        columnNumber: 23
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/promotions-page.tsx",
-                                lineNumber: 126,
-                                columnNumber: 13
+                                lineNumber: 87,
+                                columnNumber: 17
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/promotions-page.tsx",
-                        lineNumber: 116,
-                        columnNumber: 9
+                        lineNumber: 81,
+                        columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/promotions-page.tsx",
-                lineNumber: 112,
-                columnNumber: 7
+                lineNumber: 77,
+                columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "px-4 space-y-6",
-                children: filteredPromos.map((promo)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(PromotionCard, {
-                        promotion: promo,
-                        isLiked: likedPromos.includes(promo.id),
-                        onLike: ()=>toggleLike(promo.id),
-                        onShare: ()=>handleShare(promo),
-                        onDetails: ()=>setSelectedPromo(promo)
-                    }, promo.id, false, {
+                children: filteredPromos.map((promo)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "bg-card rounded-3xl overflow-hidden",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "relative aspect-[16/10]",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                        src: promo.image,
+                                        alt: promo.title,
+                                        fill: true,
+                                        className: "object-cover"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/promotions-page.tsx",
+                                        lineNumber: 104,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "absolute top-3 left-3",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("px-3 py-1 rounded-full text-xs font-medium", promo.locationColor),
+                                            children: promo.location
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/promotions-page.tsx",
+                                            lineNumber: 106,
+                                            columnNumber: 21
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/promotions-page.tsx",
+                                        lineNumber: 105,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "absolute top-3 right-3 flex gap-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                onClick: ()=>toggleLike(promo.id),
+                                                className: "w-10 h-10 rounded-full bg-black/30 backdrop-blur-sm flex items-center justify-center hover:bg-black/50 transition-colors",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__["Heart"], {
+                                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("w-5 h-5", likedPromos.includes(promo.id) ? "fill-red-500 text-red-500" : "text-white")
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/promotions-page.tsx",
+                                                    lineNumber: 110,
+                                                    columnNumber: 23
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/promotions-page.tsx",
+                                                lineNumber: 109,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                onClick: ()=>handleShare(promo),
+                                                className: "w-10 h-10 rounded-full bg-black/30 backdrop-blur-sm flex items-center justify-center hover:bg-black/50 transition-colors",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$share$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Share2$3e$__["Share2"], {
+                                                    className: "w-5 h-5 text-white"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/promotions-page.tsx",
+                                                    lineNumber: 113,
+                                                    columnNumber: 23
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/promotions-page.tsx",
+                                                lineNumber: 112,
+                                                columnNumber: 21
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/promotions-page.tsx",
+                                        lineNumber: 108,
+                                        columnNumber: 19
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/promotions-page.tsx",
+                                lineNumber: 103,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "p-4",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "text-lg font-semibold text-foreground mb-2",
+                                        children: promo.title
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/promotions-page.tsx",
+                                        lineNumber: 118,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center gap-3 mb-3",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-sm text-muted-foreground",
+                                                children: promo.dateRange
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/promotions-page.tsx",
+                                                lineNumber: 120,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-center gap-1 text-primary",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"], {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/promotions-page.tsx",
+                                                        lineNumber: 122,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "text-sm font-medium",
+                                                        children: [
+                                                            promo.daysLeft,
+                                                            " ",
+                                                            t.promotions.daysLeft
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/promotions-page.tsx",
+                                                        lineNumber: 123,
+                                                        columnNumber: 23
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/promotions-page.tsx",
+                                                lineNumber: 121,
+                                                columnNumber: 21
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/promotions-page.tsx",
+                                        lineNumber: 119,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-sm text-muted-foreground mb-4",
+                                        children: promo.description
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/promotions-page.tsx",
+                                        lineNumber: 126,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        onClick: ()=>setSelectedPromo(promo),
+                                        className: "w-full py-3 bg-primary text-primary-foreground rounded-full font-medium hover:bg-primary/90 transition-colors",
+                                        children: t.promotions.conditions
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/promotions-page.tsx",
+                                        lineNumber: 127,
+                                        columnNumber: 19
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/promotions-page.tsx",
+                                lineNumber: 117,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, promo.id, true, {
                         fileName: "[project]/components/promotions-page.tsx",
-                        lineNumber: 150,
-                        columnNumber: 11
+                        lineNumber: 102,
+                        columnNumber: 15
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/promotions-page.tsx",
-                lineNumber: 148,
-                columnNumber: 7
+                lineNumber: 100,
+                columnNumber: 9
             }, this),
             filteredPromos.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex flex-col items-center justify-center py-16 px-4 text-center",
@@ -2713,455 +2879,284 @@ function PromotionsPage() {
                             className: "w-8 h-8 text-muted-foreground"
                         }, void 0, false, {
                             fileName: "[project]/components/promotions-page.tsx",
-                            lineNumber: 164,
-                            columnNumber: 13
+                            lineNumber: 138,
+                            columnNumber: 17
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/promotions-page.tsx",
-                        lineNumber: 163,
-                        columnNumber: 11
+                        lineNumber: 137,
+                        columnNumber: 15
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "text-muted-foreground",
-                        children: "Нет акций для выбранного фильтра"
+                        children: t.promotions.title
                     }, void 0, false, {
                         fileName: "[project]/components/promotions-page.tsx",
-                        lineNumber: 166,
-                        columnNumber: 11
+                        lineNumber: 140,
+                        columnNumber: 15
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/promotions-page.tsx",
-                lineNumber: 162,
-                columnNumber: 9
+                lineNumber: 136,
+                columnNumber: 13
             }, this),
-            selectedPromo && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(PromoDetailModal, {
-                promotion: selectedPromo,
-                onClose: ()=>setSelectedPromo(null),
-                isLiked: likedPromos.includes(selectedPromo.id),
-                onLike: ()=>toggleLike(selectedPromo.id)
-            }, void 0, false, {
-                fileName: "[project]/components/promotions-page.tsx",
-                lineNumber: 172,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/components/promotions-page.tsx",
-        lineNumber: 105,
-        columnNumber: 5
-    }, this);
-}
-function PromotionCard({ promotion, isLiked, onLike, onShare, onDetails }) {
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "bg-card rounded-3xl overflow-hidden",
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative aspect-[16/10]",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                        src: promotion.image,
-                        alt: promotion.title,
-                        fill: true,
-                        className: "object-cover"
-                    }, void 0, false, {
-                        fileName: "[project]/components/promotions-page.tsx",
-                        lineNumber: 200,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute top-3 left-3",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("px-3 py-1 rounded-full text-xs font-medium", promotion.locationColor),
-                            children: promotion.location
-                        }, void 0, false, {
-                            fileName: "[project]/components/promotions-page.tsx",
-                            lineNumber: 207,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/components/promotions-page.tsx",
-                        lineNumber: 206,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute top-3 right-3 flex gap-2",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: onLike,
-                                className: "w-10 h-10 rounded-full bg-black/30 backdrop-blur-sm flex items-center justify-center hover:bg-black/50 transition-colors",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__["Heart"], {
-                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("w-5 h-5", isLiked ? "fill-red-500 text-red-500" : "text-white")
-                                }, void 0, false, {
-                                    fileName: "[project]/components/promotions-page.tsx",
-                                    lineNumber: 219,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/components/promotions-page.tsx",
-                                lineNumber: 215,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: onShare,
-                                className: "w-10 h-10 rounded-full bg-black/30 backdrop-blur-sm flex items-center justify-center hover:bg-black/50 transition-colors",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$share$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Share2$3e$__["Share2"], {
-                                    className: "w-5 h-5 text-white"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/promotions-page.tsx",
-                                    lineNumber: 225,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/components/promotions-page.tsx",
-                                lineNumber: 221,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/components/promotions-page.tsx",
-                        lineNumber: 214,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/promotions-page.tsx",
-                lineNumber: 199,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "p-4",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                        className: "text-lg font-semibold text-foreground mb-2",
-                        children: promotion.title
-                    }, void 0, false, {
-                        fileName: "[project]/components/promotions-page.tsx",
-                        lineNumber: 232,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center gap-3 mb-3",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-sm text-muted-foreground",
-                                children: promotion.dateRange
-                            }, void 0, false, {
-                                fileName: "[project]/components/promotions-page.tsx",
-                                lineNumber: 237,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center gap-1 text-primary",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"], {
-                                        className: "w-4 h-4"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/promotions-page.tsx",
-                                        lineNumber: 239,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-sm font-medium",
-                                        children: [
-                                            "осталось ",
-                                            promotion.daysLeft,
-                                            " дней"
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/promotions-page.tsx",
-                                        lineNumber: 240,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/promotions-page.tsx",
-                                lineNumber: 238,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/components/promotions-page.tsx",
-                        lineNumber: 236,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-sm text-muted-foreground mb-4",
-                        children: promotion.description
-                    }, void 0, false, {
-                        fileName: "[project]/components/promotions-page.tsx",
-                        lineNumber: 244,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: onDetails,
-                        className: "w-full py-3 bg-primary text-primary-foreground rounded-full font-medium hover:bg-primary/90 transition-colors",
-                        children: "подробнее"
-                    }, void 0, false, {
-                        fileName: "[project]/components/promotions-page.tsx",
-                        lineNumber: 248,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/promotions-page.tsx",
-                lineNumber: 231,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/components/promotions-page.tsx",
-        lineNumber: 197,
-        columnNumber: 5
-    }, this);
-}
-function PromoDetailModal({ promotion, onClose, isLiked, onLike }) {
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "fixed inset-0 z-50 bg-black/50",
-        onClick: onClose,
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "absolute bottom-0 left-0 right-0 bg-background rounded-t-3xl max-h-[90vh] overflow-hidden animate-in slide-in-from-bottom",
-            onClick: (e)=>e.stopPropagation(),
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "relative h-48",
+            selectedPromo && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "fixed inset-0 z-50 bg-black/50",
+                onClick: ()=>setSelectedPromo(null),
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "absolute bottom-0 left-0 right-0 bg-background rounded-t-3xl max-h-[90vh] overflow-hidden animate-in slide-in-from-bottom",
+                    onClick: (e)=>e.stopPropagation(),
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                            src: promotion.image,
-                            alt: promotion.title,
-                            fill: true,
-                            className: "object-cover"
-                        }, void 0, false, {
-                            fileName: "[project]/components/promotions-page.tsx",
-                            lineNumber: 278,
-                            columnNumber: 11
-                        }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "absolute inset-0 bg-gradient-to-t from-background to-transparent"
-                        }, void 0, false, {
-                            fileName: "[project]/components/promotions-page.tsx",
-                            lineNumber: 284,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            onClick: onClose,
-                            className: "absolute top-4 right-4 w-10 h-10 rounded-full bg-black/30 backdrop-blur-sm flex items-center justify-center",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
-                                className: "w-5 h-5 text-white"
-                            }, void 0, false, {
-                                fileName: "[project]/components/promotions-page.tsx",
-                                lineNumber: 289,
-                                columnNumber: 13
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/components/promotions-page.tsx",
-                            lineNumber: 285,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "absolute top-4 left-4",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("px-3 py-1 rounded-full text-xs font-medium", promotion.locationColor),
-                                children: promotion.location
-                            }, void 0, false, {
-                                fileName: "[project]/components/promotions-page.tsx",
-                                lineNumber: 292,
-                                columnNumber: 13
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/components/promotions-page.tsx",
-                            lineNumber: 291,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/components/promotions-page.tsx",
-                    lineNumber: 277,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "p-6 -mt-8 relative",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-2xl font-bold mb-4",
-                            children: promotion.title
-                        }, void 0, false, {
-                            fileName: "[project]/components/promotions-page.tsx",
-                            lineNumber: 303,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex items-center gap-4 mb-4",
+                            className: "relative h-48",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center gap-2 text-muted-foreground",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
-                                            className: "w-4 h-4"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/promotions-page.tsx",
-                                            lineNumber: 307,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-sm",
-                                            children: promotion.dateRange
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/promotions-page.tsx",
-                                            lineNumber: 308,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                    src: selectedPromo.image,
+                                    alt: selectedPromo.title,
+                                    fill: true,
+                                    className: "object-cover"
+                                }, void 0, false, {
                                     fileName: "[project]/components/promotions-page.tsx",
-                                    lineNumber: 306,
-                                    columnNumber: 13
+                                    lineNumber: 148,
+                                    columnNumber: 19
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center gap-1 text-primary",
+                                    className: "absolute inset-0 bg-gradient-to-t from-background to-transparent"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/promotions-page.tsx",
+                                    lineNumber: 149,
+                                    columnNumber: 19
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>setSelectedPromo(null),
+                                    className: "absolute top-4 right-4 w-10 h-10 rounded-full bg-black/30 backdrop-blur-sm flex items-center justify-center",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
+                                        className: "w-5 h-5 text-white"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/promotions-page.tsx",
+                                        lineNumber: 151,
+                                        columnNumber: 21
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/components/promotions-page.tsx",
+                                    lineNumber: 150,
+                                    columnNumber: 19
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "absolute top-4 left-4",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("px-3 py-1 rounded-full text-xs font-medium", selectedPromo.locationColor),
+                                        children: selectedPromo.location
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/promotions-page.tsx",
+                                        lineNumber: 154,
+                                        columnNumber: 21
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/components/promotions-page.tsx",
+                                    lineNumber: 153,
+                                    columnNumber: 19
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/promotions-page.tsx",
+                            lineNumber: 147,
+                            columnNumber: 17
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "p-6 -mt-8 relative overflow-y-auto max-h-[60vh]",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                    className: "text-2xl font-bold mb-4",
+                                    children: selectedPromo.title
+                                }, void 0, false, {
+                                    fileName: "[project]/components/promotions-page.tsx",
+                                    lineNumber: 158,
+                                    columnNumber: 19
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex items-center gap-4 mb-4",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"], {
-                                            className: "w-4 h-4"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/promotions-page.tsx",
-                                            lineNumber: 311,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-sm font-medium",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center gap-2 text-muted-foreground",
                                             children: [
-                                                promotion.daysLeft,
-                                                " дней"
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
+                                                    className: "w-4 h-4"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/promotions-page.tsx",
+                                                    lineNumber: 161,
+                                                    columnNumber: 23
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-sm",
+                                                    children: selectedPromo.dateRange
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/promotions-page.tsx",
+                                                    lineNumber: 162,
+                                                    columnNumber: 23
+                                                }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/promotions-page.tsx",
-                                            lineNumber: 312,
-                                            columnNumber: 15
+                                            lineNumber: 160,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center gap-1 text-primary",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"], {
+                                                    className: "w-4 h-4"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/promotions-page.tsx",
+                                                    lineNumber: 165,
+                                                    columnNumber: 23
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-sm font-medium",
+                                                    children: [
+                                                        selectedPromo.daysLeft,
+                                                        " ",
+                                                        t.promotions.daysLeft
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/promotions-page.tsx",
+                                                    lineNumber: 166,
+                                                    columnNumber: 23
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/promotions-page.tsx",
+                                            lineNumber: 164,
+                                            columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/promotions-page.tsx",
-                                    lineNumber: 310,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/promotions-page.tsx",
-                            lineNumber: 305,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex items-center gap-2 mb-6",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
-                                    className: "w-4 h-4 text-muted-foreground"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/promotions-page.tsx",
-                                    lineNumber: 317,
-                                    columnNumber: 13
+                                    lineNumber: 159,
+                                    columnNumber: 19
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-sm text-muted-foreground",
-                                    children: promotion.location
-                                }, void 0, false, {
-                                    fileName: "[project]/components/promotions-page.tsx",
-                                    lineNumber: 318,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/promotions-page.tsx",
-                            lineNumber: 316,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-foreground mb-6",
-                            children: promotion.fullDescription
-                        }, void 0, false, {
-                            fileName: "[project]/components/promotions-page.tsx",
-                            lineNumber: 321,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                            className: "font-semibold mb-3",
-                            children: "Условия акции:"
-                        }, void 0, false, {
-                            fileName: "[project]/components/promotions-page.tsx",
-                            lineNumber: 323,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                            className: "space-y-2 mb-6",
-                            children: promotion.terms.map((term, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                    className: "flex items-start gap-2 text-sm text-muted-foreground",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex items-center gap-2 mb-6",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
+                                            className: "w-4 h-4 text-muted-foreground"
                                         }, void 0, false, {
                                             fileName: "[project]/components/promotions-page.tsx",
-                                            lineNumber: 327,
-                                            columnNumber: 17
+                                            lineNumber: 170,
+                                            columnNumber: 21
                                         }, this),
-                                        term
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-sm text-muted-foreground",
+                                            children: selectedPromo.location
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/promotions-page.tsx",
+                                            lineNumber: 171,
+                                            columnNumber: 21
+                                        }, this)
                                     ]
-                                }, index, true, {
+                                }, void 0, true, {
                                     fileName: "[project]/components/promotions-page.tsx",
-                                    lineNumber: 326,
-                                    columnNumber: 15
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "[project]/components/promotions-page.tsx",
-                            lineNumber: 324,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex gap-3",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    onClick: onLike,
-                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("w-14 h-14 rounded-xl border flex items-center justify-center transition-colors", isLiked ? "border-red-500 bg-red-500/10" : "border-border hover:bg-secondary"),
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__["Heart"], {
-                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("w-6 h-6", isLiked ? "fill-red-500 text-red-500" : "")
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/promotions-page.tsx",
-                                        lineNumber: 341,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/components/promotions-page.tsx",
-                                    lineNumber: 334,
-                                    columnNumber: 13
+                                    lineNumber: 169,
+                                    columnNumber: 19
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    className: "flex-1 py-4 bg-primary text-primary-foreground rounded-xl font-medium hover:bg-primary/90 transition-colors",
-                                    children: "Участвовать в акции"
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-foreground mb-6",
+                                    children: selectedPromo.fullDescription
                                 }, void 0, false, {
                                     fileName: "[project]/components/promotions-page.tsx",
-                                    lineNumber: 343,
-                                    columnNumber: 13
+                                    lineNumber: 173,
+                                    columnNumber: 19
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: "font-semibold mb-3",
+                                    children: [
+                                        t.promotions.conditions,
+                                        ":"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/promotions-page.tsx",
+                                    lineNumber: 174,
+                                    columnNumber: 19
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                    className: "space-y-2 mb-6",
+                                    children: selectedPromo.terms.map((term, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                            className: "flex items-start gap-2 text-sm text-muted-foreground",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/promotions-page.tsx",
+                                                    lineNumber: 178,
+                                                    columnNumber: 27
+                                                }, this),
+                                                term
+                                            ]
+                                        }, index, true, {
+                                            fileName: "[project]/components/promotions-page.tsx",
+                                            lineNumber: 177,
+                                            columnNumber: 25
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/components/promotions-page.tsx",
+                                    lineNumber: 175,
+                                    columnNumber: 19
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex gap-3",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            onClick: ()=>toggleLike(selectedPromo.id),
+                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("w-14 h-14 rounded-xl border flex items-center justify-center transition-colors", likedPromos.includes(selectedPromo.id) ? "border-red-500 bg-red-500/10" : "border-border hover:bg-secondary"),
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__["Heart"], {
+                                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("w-6 h-6", likedPromos.includes(selectedPromo.id) ? "fill-red-500 text-red-500" : "")
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/promotions-page.tsx",
+                                                lineNumber: 188,
+                                                columnNumber: 23
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/promotions-page.tsx",
+                                            lineNumber: 184,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            className: "flex-1 py-4 bg-primary text-primary-foreground rounded-xl font-medium hover:bg-primary/90 transition-colors",
+                                            children: t.promotions.share
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/promotions-page.tsx",
+                                            lineNumber: 190,
+                                            columnNumber: 21
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/promotions-page.tsx",
+                                    lineNumber: 183,
+                                    columnNumber: 19
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/promotions-page.tsx",
-                            lineNumber: 333,
-                            columnNumber: 11
+                            lineNumber: 157,
+                            columnNumber: 17
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/promotions-page.tsx",
-                    lineNumber: 302,
-                    columnNumber: 9
+                    lineNumber: 146,
+                    columnNumber: 15
                 }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/components/promotions-page.tsx",
-            lineNumber: 272,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
+            }, void 0, false, {
+                fileName: "[project]/components/promotions-page.tsx",
+                lineNumber: 145,
+                columnNumber: 13
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "[project]/components/promotions-page.tsx",
-        lineNumber: 271,
-        columnNumber: 5
+        lineNumber: 72,
+        columnNumber: 7
     }, this);
 }
 }),
@@ -3182,7 +3177,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$qr$2d$code$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__QrCode$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/qr-code.js [app-ssr] (ecmascript) <export default as QrCode>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/phone.js [app-ssr] (ecmascript) <export default as Phone>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$contexts$2f$language$2d$context$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/contexts/language-context.tsx [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -3228,14 +3225,19 @@ const mockBookings = [
     }
 ];
 function BookingsPage() {
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$contexts$2f$language$2d$context$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLang"])();
     const [activeTab, setActiveTab] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("active");
     const [selectedBooking, setSelectedBooking] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const [showCancelConfirm, setShowCancelConfirm] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const filteredBookings = mockBookings.filter((booking)=>activeTab === "active" ? booking.status === "active" : booking.status === "completed" || booking.status === "cancelled");
-    const handleCancelBooking = (bookingId)=>{
-        // In real app, this would call an API
+    const handleCancelBooking = (_bookingId)=>{
         setShowCancelConfirm(null);
         setSelectedBooking(null);
+    };
+    const statusLabel = (status)=>{
+        if (status === "active") return t.bookings.status.active;
+        if (status === "completed") return t.bookings.status.completed;
+        return t.bookings.status.cancelled;
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "min-h-screen bg-background pb-24",
@@ -3244,16 +3246,16 @@ function BookingsPage() {
                 className: "px-4 pt-6 pb-4",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                     className: "text-xl font-medium text-center",
-                    children: "мои брони"
+                    children: t.bookings.title
                 }, void 0, false, {
                     fileName: "[project]/components/bookings-page.tsx",
-                    lineNumber: 82,
-                    columnNumber: 9
+                    lineNumber: 52,
+                    columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/bookings-page.tsx",
-                lineNumber: 81,
-                columnNumber: 7
+                lineNumber: 51,
+                columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "px-4 mb-6",
@@ -3263,31 +3265,31 @@ function BookingsPage() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: ()=>setActiveTab("active"),
                             className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("flex-1 pb-3 text-center font-medium transition-colors", activeTab === "active" ? "text-foreground border-b-2 border-primary" : "text-muted-foreground"),
-                            children: "активные"
+                            children: t.bookings.active
                         }, void 0, false, {
                             fileName: "[project]/components/bookings-page.tsx",
-                            lineNumber: 88,
-                            columnNumber: 11
+                            lineNumber: 57,
+                            columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: ()=>setActiveTab("history"),
                             className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("flex-1 pb-3 text-center font-medium transition-colors", activeTab === "history" ? "text-foreground border-b-2 border-primary" : "text-muted-foreground"),
-                            children: "история"
+                            children: t.bookings.history
                         }, void 0, false, {
                             fileName: "[project]/components/bookings-page.tsx",
-                            lineNumber: 99,
-                            columnNumber: 11
+                            lineNumber: 65,
+                            columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/bookings-page.tsx",
-                    lineNumber: 87,
-                    columnNumber: 9
+                    lineNumber: 56,
+                    columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/bookings-page.tsx",
-                lineNumber: 86,
-                columnNumber: 7
+                lineNumber: 55,
+                columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "px-4 space-y-4",
@@ -3300,39 +3302,175 @@ function BookingsPage() {
                                 className: "w-8 h-8 text-muted-foreground"
                             }, void 0, false, {
                                 fileName: "[project]/components/bookings-page.tsx",
-                                lineNumber: 118,
-                                columnNumber: 15
+                                lineNumber: 80,
+                                columnNumber: 19
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/bookings-page.tsx",
-                            lineNumber: 117,
-                            columnNumber: 13
+                            lineNumber: 79,
+                            columnNumber: 17
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-muted-foreground",
-                            children: activeTab === "active" ? "У вас нет активных бронирований" : "История бронирований пуста"
+                            children: activeTab === "active" ? t.bookings.noActive : t.bookings.noHistory
                         }, void 0, false, {
                             fileName: "[project]/components/bookings-page.tsx",
-                            lineNumber: 120,
-                            columnNumber: 13
+                            lineNumber: 82,
+                            columnNumber: 17
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/bookings-page.tsx",
-                    lineNumber: 116,
-                    columnNumber: 11
-                }, this) : filteredBookings.map((booking)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(BookingCard, {
-                        booking: booking,
-                        onSelect: ()=>setSelectedBooking(booking)
+                    lineNumber: 78,
+                    columnNumber: 15
+                }, this) : filteredBookings.map((booking)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        onClick: ()=>setSelectedBooking(booking),
+                        className: "w-full bg-card rounded-2xl p-4 text-left hover:bg-card/80 transition-colors",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-start justify-between",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex-1",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center gap-2 mb-2",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("px-2 py-0.5 rounded-full text-xs font-medium", booking.status === "active" ? "bg-primary/20 text-primary" : booking.status === "completed" ? "bg-muted text-muted-foreground" : "bg-destructive/20 text-destructive"),
+                                                    children: statusLabel(booking.status)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/bookings-page.tsx",
+                                                    lineNumber: 96,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-sm font-medium text-primary",
+                                                    children: booking.price
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/bookings-page.tsx",
+                                                    lineNumber: 103,
+                                                    columnNumber: 27
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/bookings-page.tsx",
+                                            lineNumber: 95,
+                                            columnNumber: 25
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            className: "font-medium text-foreground mb-3",
+                                            children: booking.type
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/bookings-page.tsx",
+                                            lineNumber: 105,
+                                            columnNumber: 25
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-2",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex items-center gap-2 text-sm text-muted-foreground",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
+                                                            className: "w-4 h-4"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/bookings-page.tsx",
+                                                            lineNumber: 107,
+                                                            columnNumber: 98
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            children: booking.location
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/bookings-page.tsx",
+                                                            lineNumber: 107,
+                                                            columnNumber: 128
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/bookings-page.tsx",
+                                                    lineNumber: 107,
+                                                    columnNumber: 27
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex items-center gap-2 text-sm text-muted-foreground",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
+                                                            className: "w-4 h-4"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/bookings-page.tsx",
+                                                            lineNumber: 108,
+                                                            columnNumber: 98
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            children: booking.date
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/bookings-page.tsx",
+                                                            lineNumber: 108,
+                                                            columnNumber: 130
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/bookings-page.tsx",
+                                                    lineNumber: 108,
+                                                    columnNumber: 27
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex items-center gap-2 text-sm text-muted-foreground",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
+                                                            className: "w-4 h-4"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/bookings-page.tsx",
+                                                            lineNumber: 109,
+                                                            columnNumber: 98
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            children: booking.time
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/bookings-page.tsx",
+                                                            lineNumber: 109,
+                                                            columnNumber: 127
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/bookings-page.tsx",
+                                                    lineNumber: 109,
+                                                    columnNumber: 27
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/bookings-page.tsx",
+                                            lineNumber: 106,
+                                            columnNumber: 25
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/bookings-page.tsx",
+                                    lineNumber: 94,
+                                    columnNumber: 23
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
+                                    className: "w-5 h-5 text-muted-foreground mt-1"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/bookings-page.tsx",
+                                    lineNumber: 112,
+                                    columnNumber: 23
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/bookings-page.tsx",
+                            lineNumber: 93,
+                            columnNumber: 21
+                        }, this)
                     }, booking.id, false, {
                         fileName: "[project]/components/bookings-page.tsx",
-                        lineNumber: 128,
-                        columnNumber: 13
+                        lineNumber: 88,
+                        columnNumber: 19
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/bookings-page.tsx",
-                lineNumber: 114,
-                columnNumber: 7
+                lineNumber: 76,
+                columnNumber: 9
             }, this),
             selectedBooking && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "fixed inset-0 z-50 bg-black/50",
@@ -3346,11 +3484,11 @@ function BookingsPage() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     className: "text-lg font-semibold",
-                                    children: "Детали бронирования"
+                                    children: t.bookings.bookingDetails
                                 }, void 0, false, {
                                     fileName: "[project]/components/bookings-page.tsx",
-                                    lineNumber: 146,
-                                    columnNumber: 15
+                                    lineNumber: 124,
+                                    columnNumber: 19
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>setSelectedBooking(null),
@@ -3359,19 +3497,19 @@ function BookingsPage() {
                                         className: "w-5 h-5"
                                     }, void 0, false, {
                                         fileName: "[project]/components/bookings-page.tsx",
-                                        lineNumber: 151,
-                                        columnNumber: 17
+                                        lineNumber: 126,
+                                        columnNumber: 21
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/bookings-page.tsx",
-                                    lineNumber: 147,
-                                    columnNumber: 15
+                                    lineNumber: 125,
+                                    columnNumber: 19
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/bookings-page.tsx",
-                            lineNumber: 145,
-                            columnNumber: 13
+                            lineNumber: 123,
+                            columnNumber: 17
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "p-6",
@@ -3381,10 +3519,10 @@ function BookingsPage() {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("px-3 py-1 rounded-full text-sm font-medium", selectedBooking.status === "active" ? "bg-primary/20 text-primary" : selectedBooking.status === "completed" ? "bg-muted text-muted-foreground" : "bg-destructive/20 text-destructive"),
-                                            children: selectedBooking.status === "active" ? "Активно" : selectedBooking.status === "completed" ? "Завершено" : "Отменено"
+                                            children: statusLabel(selectedBooking.status)
                                         }, void 0, false, {
                                             fileName: "[project]/components/bookings-page.tsx",
-                                            lineNumber: 158,
+                                            lineNumber: 131,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3392,28 +3530,28 @@ function BookingsPage() {
                                             children: selectedBooking.price
                                         }, void 0, false, {
                                             fileName: "[project]/components/bookings-page.tsx",
-                                            lineNumber: 168,
-                                            columnNumber: 17
+                                            lineNumber: 138,
+                                            columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/bookings-page.tsx",
-                                    lineNumber: 157,
-                                    columnNumber: 15
+                                    lineNumber: 130,
+                                    columnNumber: 19
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                     className: "text-xl font-semibold mb-4",
                                     children: selectedBooking.type
                                 }, void 0, false, {
                                     fileName: "[project]/components/bookings-page.tsx",
-                                    lineNumber: 172,
-                                    columnNumber: 15
+                                    lineNumber: 140,
+                                    columnNumber: 19
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "space-y-4 mb-6",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-center gap-3 text-foreground",
+                                            className: "flex items-center gap-3",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "w-10 h-10 rounded-xl bg-secondary flex items-center justify-center",
@@ -3421,46 +3559,46 @@ function BookingsPage() {
                                                         className: "w-5 h-5 text-muted-foreground"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/bookings-page.tsx",
-                                                        lineNumber: 177,
-                                                        columnNumber: 21
+                                                        lineNumber: 142,
+                                                        columnNumber: 146
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/bookings-page.tsx",
-                                                    lineNumber: 176,
-                                                    columnNumber: 19
+                                                    lineNumber: 142,
+                                                    columnNumber: 62
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-sm text-muted-foreground",
-                                                            children: "Локация"
+                                                            children: "Location"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/bookings-page.tsx",
-                                                            lineNumber: 180,
-                                                            columnNumber: 21
+                                                            lineNumber: 142,
+                                                            columnNumber: 209
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "font-medium",
                                                             children: selectedBooking.location
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/bookings-page.tsx",
-                                                            lineNumber: 181,
-                                                            columnNumber: 21
+                                                            lineNumber: 142,
+                                                            columnNumber: 266
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/bookings-page.tsx",
-                                                    lineNumber: 179,
-                                                    columnNumber: 19
+                                                    lineNumber: 142,
+                                                    columnNumber: 204
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/bookings-page.tsx",
-                                            lineNumber: 175,
-                                            columnNumber: 17
+                                            lineNumber: 142,
+                                            columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-center gap-3 text-foreground",
+                                            className: "flex items-center gap-3",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "w-10 h-10 rounded-xl bg-secondary flex items-center justify-center",
@@ -3468,46 +3606,46 @@ function BookingsPage() {
                                                         className: "w-5 h-5 text-muted-foreground"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/bookings-page.tsx",
-                                                        lineNumber: 187,
-                                                        columnNumber: 21
+                                                        lineNumber: 143,
+                                                        columnNumber: 146
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/bookings-page.tsx",
-                                                    lineNumber: 186,
-                                                    columnNumber: 19
+                                                    lineNumber: 143,
+                                                    columnNumber: 62
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-sm text-muted-foreground",
-                                                            children: "Дата"
+                                                            children: t.bookings.active
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/bookings-page.tsx",
-                                                            lineNumber: 190,
-                                                            columnNumber: 21
+                                                            lineNumber: 143,
+                                                            columnNumber: 211
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "font-medium",
                                                             children: selectedBooking.date
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/bookings-page.tsx",
-                                                            lineNumber: 191,
-                                                            columnNumber: 21
+                                                            lineNumber: 143,
+                                                            columnNumber: 279
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/bookings-page.tsx",
-                                                    lineNumber: 189,
-                                                    columnNumber: 19
+                                                    lineNumber: 143,
+                                                    columnNumber: 206
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/bookings-page.tsx",
-                                            lineNumber: 185,
-                                            columnNumber: 17
+                                            lineNumber: 143,
+                                            columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-center gap-3 text-foreground",
+                                            className: "flex items-center gap-3",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "w-10 h-10 rounded-xl bg-secondary flex items-center justify-center",
@@ -3515,49 +3653,49 @@ function BookingsPage() {
                                                         className: "w-5 h-5 text-muted-foreground"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/bookings-page.tsx",
-                                                        lineNumber: 197,
-                                                        columnNumber: 21
+                                                        lineNumber: 144,
+                                                        columnNumber: 146
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/bookings-page.tsx",
-                                                    lineNumber: 196,
-                                                    columnNumber: 19
+                                                    lineNumber: 144,
+                                                    columnNumber: 62
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "text-sm text-muted-foreground",
-                                                            children: "Время"
+                                                            children: t.bookingForm.time
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/bookings-page.tsx",
-                                                            lineNumber: 200,
-                                                            columnNumber: 21
+                                                            lineNumber: 144,
+                                                            columnNumber: 208
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             className: "font-medium",
                                                             children: selectedBooking.time
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/bookings-page.tsx",
-                                                            lineNumber: 201,
-                                                            columnNumber: 21
+                                                            lineNumber: 144,
+                                                            columnNumber: 277
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/bookings-page.tsx",
-                                                    lineNumber: 199,
-                                                    columnNumber: 19
+                                                    lineNumber: 144,
+                                                    columnNumber: 203
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/bookings-page.tsx",
-                                            lineNumber: 195,
-                                            columnNumber: 17
+                                            lineNumber: 144,
+                                            columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/bookings-page.tsx",
-                                    lineNumber: 174,
-                                    columnNumber: 15
+                                    lineNumber: 141,
+                                    columnNumber: 19
                                 }, this),
                                 selectedBooking.status === "active" && selectedBooking.qrCode && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "bg-card rounded-2xl p-6 mb-6 text-center",
@@ -3568,35 +3706,35 @@ function BookingsPage() {
                                                 className: "w-24 h-24 text-foreground"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/bookings-page.tsx",
-                                                lineNumber: 210,
-                                                columnNumber: 21
+                                                lineNumber: 149,
+                                                columnNumber: 27
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/bookings-page.tsx",
-                                            lineNumber: 209,
-                                            columnNumber: 19
+                                            lineNumber: 148,
+                                            columnNumber: 25
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-sm text-muted-foreground",
-                                            children: "Код бронирования"
+                                            children: t.bookings.qrCode
                                         }, void 0, false, {
                                             fileName: "[project]/components/bookings-page.tsx",
-                                            lineNumber: 212,
-                                            columnNumber: 19
+                                            lineNumber: 151,
+                                            columnNumber: 25
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "font-mono font-bold text-lg",
                                             children: selectedBooking.qrCode
                                         }, void 0, false, {
                                             fileName: "[project]/components/bookings-page.tsx",
-                                            lineNumber: 213,
-                                            columnNumber: 19
+                                            lineNumber: 152,
+                                            columnNumber: 25
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/bookings-page.tsx",
-                                    lineNumber: 208,
-                                    columnNumber: 17
+                                    lineNumber: 147,
+                                    columnNumber: 23
                                 }, this),
                                 selectedBooking.status === "active" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex gap-3",
@@ -3604,11 +3742,11 @@ function BookingsPage() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             onClick: ()=>setShowCancelConfirm(selectedBooking.id),
                                             className: "flex-1 py-4 rounded-xl border border-destructive text-destructive hover:bg-destructive/10 transition-colors",
-                                            children: "Отменить"
+                                            children: t.bookings.cancel
                                         }, void 0, false, {
                                             fileName: "[project]/components/bookings-page.tsx",
-                                            lineNumber: 220,
-                                            columnNumber: 19
+                                            lineNumber: 157,
+                                            columnNumber: 25
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             className: "flex-1 py-4 rounded-xl bg-primary text-primary-foreground hover:bg-primary/90 transition-colors flex items-center justify-center gap-2",
@@ -3617,46 +3755,38 @@ function BookingsPage() {
                                                     className: "w-5 h-5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/bookings-page.tsx",
-                                                    lineNumber: 227,
-                                                    columnNumber: 21
+                                                    lineNumber: 161,
+                                                    columnNumber: 27
                                                 }, this),
-                                                "Связаться"
+                                                t.bookings.contact
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/bookings-page.tsx",
-                                            lineNumber: 226,
-                                            columnNumber: 19
+                                            lineNumber: 160,
+                                            columnNumber: 25
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/bookings-page.tsx",
-                                    lineNumber: 219,
-                                    columnNumber: 17
-                                }, this),
-                                selectedBooking.status === "completed" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    className: "w-full py-4 rounded-xl bg-primary text-primary-foreground hover:bg-primary/90 transition-colors",
-                                    children: "Забронировать снова"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/bookings-page.tsx",
-                                    lineNumber: 234,
-                                    columnNumber: 17
+                                    lineNumber: 156,
+                                    columnNumber: 23
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/bookings-page.tsx",
-                            lineNumber: 155,
-                            columnNumber: 13
+                            lineNumber: 129,
+                            columnNumber: 17
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/bookings-page.tsx",
-                    lineNumber: 140,
-                    columnNumber: 11
+                    lineNumber: 122,
+                    columnNumber: 15
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/bookings-page.tsx",
-                lineNumber: 139,
-                columnNumber: 9
+                lineNumber: 121,
+                columnNumber: 13
             }, this),
             showCancelConfirm && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "fixed inset-0 z-[60] bg-black/50 flex items-center justify-center p-4",
@@ -3667,19 +3797,19 @@ function BookingsPage() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                             className: "text-lg font-semibold text-center",
-                            children: "Отменить бронирование?"
+                            children: t.bookings.cancelConfirm
                         }, void 0, false, {
                             fileName: "[project]/components/bookings-page.tsx",
-                            lineNumber: 250,
-                            columnNumber: 13
+                            lineNumber: 174,
+                            columnNumber: 17
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-muted-foreground text-center mt-2 text-sm",
-                            children: "Средства будут возвращены на ваш баланс в течение 24 часов"
+                            children: t.bookings.cancelDesc
                         }, void 0, false, {
                             fileName: "[project]/components/bookings-page.tsx",
-                            lineNumber: 251,
-                            columnNumber: 13
+                            lineNumber: 175,
+                            columnNumber: 17
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex gap-3 mt-6",
@@ -3687,189 +3817,43 @@ function BookingsPage() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>setShowCancelConfirm(null),
                                     className: "flex-1 py-3 rounded-xl border border-border hover:bg-secondary transition-colors",
-                                    children: "Нет"
+                                    children: t.profile.logoutCancel
                                 }, void 0, false, {
                                     fileName: "[project]/components/bookings-page.tsx",
-                                    lineNumber: 255,
-                                    columnNumber: 15
+                                    lineNumber: 177,
+                                    columnNumber: 19
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>handleCancelBooking(showCancelConfirm),
                                     className: "flex-1 py-3 rounded-xl bg-destructive text-destructive-foreground hover:bg-destructive/90 transition-colors",
-                                    children: "Да, отменить"
+                                    children: t.bookings.confirm
                                 }, void 0, false, {
                                     fileName: "[project]/components/bookings-page.tsx",
-                                    lineNumber: 261,
-                                    columnNumber: 15
+                                    lineNumber: 180,
+                                    columnNumber: 19
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/bookings-page.tsx",
-                            lineNumber: 254,
-                            columnNumber: 13
+                            lineNumber: 176,
+                            columnNumber: 17
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/bookings-page.tsx",
-                    lineNumber: 246,
-                    columnNumber: 11
+                    lineNumber: 173,
+                    columnNumber: 15
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/bookings-page.tsx",
-                lineNumber: 245,
-                columnNumber: 9
+                lineNumber: 172,
+                columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/bookings-page.tsx",
-        lineNumber: 79,
-        columnNumber: 5
-    }, this);
-}
-function BookingCard({ booking, onSelect }) {
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-        onClick: onSelect,
-        className: "w-full bg-card rounded-2xl p-4 text-left hover:bg-card/80 transition-colors",
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex items-start justify-between",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex-1",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex items-center gap-2 mb-2",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("px-2 py-0.5 rounded-full text-xs font-medium", booking.status === "active" ? "bg-primary/20 text-primary" : booking.status === "completed" ? "bg-muted text-muted-foreground" : "bg-destructive/20 text-destructive"),
-                                    children: booking.status === "active" ? "активно" : booking.status === "completed" ? "завершено" : "отменено"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/bookings-page.tsx",
-                                    lineNumber: 284,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-sm font-medium text-primary",
-                                    children: booking.price
-                                }, void 0, false, {
-                                    fileName: "[project]/components/bookings-page.tsx",
-                                    lineNumber: 294,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/bookings-page.tsx",
-                            lineNumber: 283,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                            className: "font-medium text-foreground mb-3",
-                            children: booking.type
-                        }, void 0, false, {
-                            fileName: "[project]/components/bookings-page.tsx",
-                            lineNumber: 297,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "space-y-2",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center gap-2 text-sm text-muted-foreground",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
-                                            className: "w-4 h-4"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/bookings-page.tsx",
-                                            lineNumber: 301,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            children: booking.location
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/bookings-page.tsx",
-                                            lineNumber: 302,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/bookings-page.tsx",
-                                    lineNumber: 300,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center gap-2 text-sm text-muted-foreground",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
-                                            className: "w-4 h-4"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/bookings-page.tsx",
-                                            lineNumber: 305,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            children: booking.date
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/bookings-page.tsx",
-                                            lineNumber: 306,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/bookings-page.tsx",
-                                    lineNumber: 304,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center gap-2 text-sm text-muted-foreground",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
-                                            className: "w-4 h-4"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/bookings-page.tsx",
-                                            lineNumber: 309,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            children: booking.time
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/bookings-page.tsx",
-                                            lineNumber: 310,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/bookings-page.tsx",
-                                    lineNumber: 308,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/bookings-page.tsx",
-                            lineNumber: 299,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/components/bookings-page.tsx",
-                    lineNumber: 282,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
-                    className: "w-5 h-5 text-muted-foreground mt-1"
-                }, void 0, false, {
-                    fileName: "[project]/components/bookings-page.tsx",
-                    lineNumber: 315,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/components/bookings-page.tsx",
-            lineNumber: 281,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
-        fileName: "[project]/components/bookings-page.tsx",
-        lineNumber: 277,
-        columnNumber: 5
+        lineNumber: 50,
+        columnNumber: 7
     }, this);
 }
 }),
@@ -3881,7 +3865,6 @@ __turbopack_context__.s([
     ()=>CouponsPage
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$gift$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Gift$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/gift.js [app-ssr] (ecmascript) <export default as Gift>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$copy$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Copy$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/copy.js [app-ssr] (ecmascript) <export default as Copy>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/check.js [app-ssr] (ecmascript) <export default as Check>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$plus$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Plus$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/plus.js [app-ssr] (ecmascript) <export default as Plus>");
@@ -3889,7 +3872,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-ssr] (ecmascript) <export default as X>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$contexts$2f$language$2d$context$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/contexts/language-context.tsx [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -3930,6 +3915,7 @@ const initialCoupons = [
     }
 ];
 function CouponsPage() {
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$contexts$2f$language$2d$context$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLang"])();
     const [coupons, setCoupons] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(initialCoupons);
     const [showAddCoupon, setShowAddCoupon] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [newCouponCode, setNewCouponCode] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
@@ -3939,14 +3925,13 @@ function CouponsPage() {
     const usedCoupons = coupons.filter((c)=>c.isUsed);
     const handleAddCoupon = ()=>{
         if (!newCouponCode.trim()) {
-            setAddError("Введите промокод");
+            setAddError(t.coupons.enterCode);
             return;
         }
         if (coupons.some((c)=>c.code.toLowerCase() === newCouponCode.toLowerCase())) {
-            setAddError("Этот промокод уже добавлен");
+            setAddError("—");
             return;
         }
-        // Simulate adding a new coupon
         if (newCouponCode.toUpperCase() === "NEWUSER") {
             setCoupons([
                 ...coupons,
@@ -3966,7 +3951,7 @@ function CouponsPage() {
                 setAddSuccess(false);
             }, 1500);
         } else {
-            setAddError("Промокод не найден или недействителен");
+            setAddError("—");
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3979,16 +3964,16 @@ function CouponsPage() {
                         className: "w-10"
                     }, void 0, false, {
                         fileName: "[project]/components/coupons-page.tsx",
-                        lineNumber: 102,
-                        columnNumber: 9
+                        lineNumber: 51,
+                        columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                         className: "text-xl font-medium",
-                        children: "купоны"
+                        children: t.coupons.title
                     }, void 0, false, {
                         fileName: "[project]/components/coupons-page.tsx",
-                        lineNumber: 103,
-                        columnNumber: 9
+                        lineNumber: 52,
+                        columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>setShowAddCoupon(true),
@@ -3997,19 +3982,19 @@ function CouponsPage() {
                             className: "w-5 h-5 text-primary-foreground"
                         }, void 0, false, {
                             fileName: "[project]/components/coupons-page.tsx",
-                            lineNumber: 108,
-                            columnNumber: 11
+                            lineNumber: 54,
+                            columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/coupons-page.tsx",
-                        lineNumber: 104,
-                        columnNumber: 9
+                        lineNumber: 53,
+                        columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/coupons-page.tsx",
-                lineNumber: 101,
-                columnNumber: 7
+                lineNumber: 50,
+                columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "px-4 mb-6",
@@ -4017,196 +4002,131 @@ function CouponsPage() {
                     className: "bg-gradient-to-r from-primary/20 to-primary/10 rounded-2xl p-4 border border-primary/30",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex items-center justify-between",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center gap-3",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ticket$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Ticket$3e$__["Ticket"], {
-                                            className: "w-6 h-6 text-primary"
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center gap-3",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ticket$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Ticket$3e$__["Ticket"], {
+                                        className: "w-6 h-6 text-primary"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/coupons-page.tsx",
+                                        lineNumber: 63,
+                                        columnNumber: 19
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/components/coupons-page.tsx",
+                                    lineNumber: 62,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-sm text-muted-foreground",
+                                            children: t.coupons.active
                                         }, void 0, false, {
                                             fileName: "[project]/components/coupons-page.tsx",
-                                            lineNumber: 118,
-                                            columnNumber: 17
+                                            lineNumber: 66,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-2xl font-bold",
+                                            children: activeCoupons.length
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/coupons-page.tsx",
+                                            lineNumber: 67,
+                                            columnNumber: 19
                                         }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/coupons-page.tsx",
-                                        lineNumber: 117,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-sm text-muted-foreground",
-                                                children: "Активных купонов"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/coupons-page.tsx",
-                                                lineNumber: 121,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-2xl font-bold",
-                                                children: activeCoupons.length
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/coupons-page.tsx",
-                                                lineNumber: 122,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/coupons-page.tsx",
-                                        lineNumber: 120,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/coupons-page.tsx",
-                                lineNumber: 116,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "text-right",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-sm text-muted-foreground",
-                                        children: "Потенциальная экономия"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/coupons-page.tsx",
-                                        lineNumber: 126,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-lg font-semibold text-primary",
-                                        children: "до 35%"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/coupons-page.tsx",
-                                        lineNumber: 127,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/coupons-page.tsx",
-                                lineNumber: 125,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/coupons-page.tsx",
+                                    lineNumber: 65,
+                                    columnNumber: 17
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/coupons-page.tsx",
+                            lineNumber: 61,
+                            columnNumber: 15
+                        }, this)
+                    }, void 0, false, {
                         fileName: "[project]/components/coupons-page.tsx",
-                        lineNumber: 115,
-                        columnNumber: 11
+                        lineNumber: 60,
+                        columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/coupons-page.tsx",
-                    lineNumber: 114,
-                    columnNumber: 9
+                    lineNumber: 59,
+                    columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/coupons-page.tsx",
-                lineNumber: 113,
-                columnNumber: 7
+                lineNumber: 58,
+                columnNumber: 9
             }, this),
             activeCoupons.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "px-4 mb-6",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                         className: "text-sm text-muted-foreground mb-3",
-                        children: "Активные купоны"
+                        children: t.coupons.active
                     }, void 0, false, {
                         fileName: "[project]/components/coupons-page.tsx",
-                        lineNumber: 136,
-                        columnNumber: 11
+                        lineNumber: 76,
+                        columnNumber: 15
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "space-y-3",
                         children: activeCoupons.map((coupon)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(CouponCard, {
-                                coupon: coupon
+                                coupon: coupon,
+                                t: t.coupons
                             }, coupon.id, false, {
                                 fileName: "[project]/components/coupons-page.tsx",
-                                lineNumber: 139,
-                                columnNumber: 15
+                                lineNumber: 78,
+                                columnNumber: 48
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/coupons-page.tsx",
-                        lineNumber: 137,
-                        columnNumber: 11
+                        lineNumber: 77,
+                        columnNumber: 15
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/coupons-page.tsx",
-                lineNumber: 135,
-                columnNumber: 9
+                lineNumber: 75,
+                columnNumber: 13
             }, this),
             usedCoupons.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "px-4",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                         className: "text-sm text-muted-foreground mb-3",
-                        children: "Использованные"
+                        children: t.coupons.used
                     }, void 0, false, {
                         fileName: "[project]/components/coupons-page.tsx",
-                        lineNumber: 148,
-                        columnNumber: 11
+                        lineNumber: 85,
+                        columnNumber: 15
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "space-y-3",
                         children: usedCoupons.map((coupon)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(CouponCard, {
-                                coupon: coupon
+                                coupon: coupon,
+                                t: t.coupons
                             }, coupon.id, false, {
                                 fileName: "[project]/components/coupons-page.tsx",
-                                lineNumber: 151,
-                                columnNumber: 15
+                                lineNumber: 87,
+                                columnNumber: 46
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/coupons-page.tsx",
-                        lineNumber: 149,
-                        columnNumber: 11
+                        lineNumber: 86,
+                        columnNumber: 15
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/coupons-page.tsx",
-                lineNumber: 147,
-                columnNumber: 9
-            }, this),
-            coupons.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex flex-col items-center justify-center py-16 px-4 text-center",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "w-16 h-16 rounded-full bg-secondary flex items-center justify-center mb-4",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$gift$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Gift$3e$__["Gift"], {
-                            className: "w-8 h-8 text-muted-foreground"
-                        }, void 0, false, {
-                            fileName: "[project]/components/coupons-page.tsx",
-                            lineNumber: 160,
-                            columnNumber: 13
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/components/coupons-page.tsx",
-                        lineNumber: 159,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-muted-foreground mb-4",
-                        children: "У вас пока нет купонов"
-                    }, void 0, false, {
-                        fileName: "[project]/components/coupons-page.tsx",
-                        lineNumber: 162,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: ()=>setShowAddCoupon(true),
-                        className: "px-6 py-3 bg-primary text-primary-foreground rounded-full font-medium hover:bg-primary/90 transition-colors",
-                        children: "Добавить промокод"
-                    }, void 0, false, {
-                        fileName: "[project]/components/coupons-page.tsx",
-                        lineNumber: 163,
-                        columnNumber: 11
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/coupons-page.tsx",
-                lineNumber: 158,
-                columnNumber: 9
+                lineNumber: 84,
+                columnNumber: 13
             }, this),
             showAddCoupon && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "fixed inset-0 z-50 bg-black/50 flex items-end",
@@ -4220,11 +4140,11 @@ function CouponsPage() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     className: "text-lg font-semibold",
-                                    children: "Добавить промокод"
+                                    children: t.coupons.addCoupon
                                 }, void 0, false, {
                                     fileName: "[project]/components/coupons-page.tsx",
-                                    lineNumber: 180,
-                                    columnNumber: 15
+                                    lineNumber: 96,
+                                    columnNumber: 19
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>{
@@ -4237,19 +4157,19 @@ function CouponsPage() {
                                         className: "w-5 h-5"
                                     }, void 0, false, {
                                         fileName: "[project]/components/coupons-page.tsx",
-                                        lineNumber: 189,
-                                        columnNumber: 17
+                                        lineNumber: 98,
+                                        columnNumber: 21
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/coupons-page.tsx",
-                                    lineNumber: 181,
-                                    columnNumber: 15
+                                    lineNumber: 97,
+                                    columnNumber: 19
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/coupons-page.tsx",
-                            lineNumber: 179,
-                            columnNumber: 13
+                            lineNumber: 95,
+                            columnNumber: 17
                         }, this),
                         addSuccess ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex flex-col items-center py-8",
@@ -4260,27 +4180,30 @@ function CouponsPage() {
                                         className: "w-8 h-8 text-primary"
                                     }, void 0, false, {
                                         fileName: "[project]/components/coupons-page.tsx",
-                                        lineNumber: 196,
-                                        columnNumber: 19
+                                        lineNumber: 104,
+                                        columnNumber: 25
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/coupons-page.tsx",
-                                    lineNumber: 195,
-                                    columnNumber: 17
+                                    lineNumber: 103,
+                                    columnNumber: 23
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-lg font-medium",
-                                    children: "Промокод добавлен!"
-                                }, void 0, false, {
+                                    children: [
+                                        t.coupons.addCoupon,
+                                        "!"
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/components/coupons-page.tsx",
-                                    lineNumber: 198,
-                                    columnNumber: 17
+                                    lineNumber: 106,
+                                    columnNumber: 23
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/coupons-page.tsx",
-                            lineNumber: 194,
-                            columnNumber: 15
+                            lineNumber: 102,
+                            columnNumber: 21
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4288,7 +4211,7 @@ function CouponsPage() {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                             type: "text",
-                                            placeholder: "Введите промокод",
+                                            placeholder: t.coupons.enterCode,
                                             value: newCouponCode,
                                             onChange: (e)=>{
                                                 setNewCouponCode(e.target.value.toUpperCase());
@@ -4297,61 +4220,53 @@ function CouponsPage() {
                                             className: "w-full px-4 py-4 rounded-xl bg-secondary border border-border focus:border-primary focus:outline-none transition-colors text-center text-lg font-medium tracking-wider"
                                         }, void 0, false, {
                                             fileName: "[project]/components/coupons-page.tsx",
-                                            lineNumber: 203,
-                                            columnNumber: 19
+                                            lineNumber: 111,
+                                            columnNumber: 25
                                         }, this),
                                         addError && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-destructive text-sm mt-2 text-center",
                                             children: addError
                                         }, void 0, false, {
                                             fileName: "[project]/components/coupons-page.tsx",
-                                            lineNumber: 214,
-                                            columnNumber: 21
+                                            lineNumber: 114,
+                                            columnNumber: 38
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/coupons-page.tsx",
-                                    lineNumber: 202,
-                                    columnNumber: 17
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-sm text-muted-foreground text-center mb-6",
-                                    children: "Попробуйте: NEWUSER"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/coupons-page.tsx",
-                                    lineNumber: 218,
-                                    columnNumber: 17
+                                    lineNumber: 110,
+                                    columnNumber: 23
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: handleAddCoupon,
                                     className: "w-full py-4 bg-primary text-primary-foreground rounded-xl font-medium hover:bg-primary/90 transition-colors",
-                                    children: "Применить"
+                                    children: t.coupons.apply
                                 }, void 0, false, {
                                     fileName: "[project]/components/coupons-page.tsx",
-                                    lineNumber: 222,
-                                    columnNumber: 17
+                                    lineNumber: 116,
+                                    columnNumber: 23
                                 }, this)
                             ]
                         }, void 0, true)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/coupons-page.tsx",
-                    lineNumber: 175,
-                    columnNumber: 11
+                    lineNumber: 94,
+                    columnNumber: 15
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/coupons-page.tsx",
-                lineNumber: 174,
-                columnNumber: 9
+                lineNumber: 93,
+                columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/coupons-page.tsx",
-        lineNumber: 99,
-        columnNumber: 5
+        lineNumber: 49,
+        columnNumber: 7
     }, this);
 }
-function CouponCard({ coupon }) {
+function CouponCard({ coupon, t }) {
     const [copied, setCopied] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const handleCopy = ()=>{
         navigator.clipboard.writeText(coupon.code);
@@ -4365,15 +4280,15 @@ function CouponCard({ coupon }) {
                 className: "absolute -left-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-background"
             }, void 0, false, {
                 fileName: "[project]/components/coupons-page.tsx",
-                lineNumber: 254,
-                columnNumber: 7
+                lineNumber: 137,
+                columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-background"
             }, void 0, false, {
                 fileName: "[project]/components/coupons-page.tsx",
-                lineNumber: 255,
-                columnNumber: 7
+                lineNumber: 138,
+                columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex items-start justify-between",
@@ -4389,55 +4304,56 @@ function CouponCard({ coupon }) {
                                         children: coupon.discount
                                     }, void 0, false, {
                                         fileName: "[project]/components/coupons-page.tsx",
-                                        lineNumber: 260,
-                                        columnNumber: 13
+                                        lineNumber: 142,
+                                        columnNumber: 15
                                     }, this),
                                     coupon.isUsed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "text-xs text-muted-foreground bg-muted px-2 py-0.5 rounded",
-                                        children: "использован"
+                                        children: t.used_label
                                     }, void 0, false, {
                                         fileName: "[project]/components/coupons-page.tsx",
-                                        lineNumber: 267,
-                                        columnNumber: 15
+                                        lineNumber: 143,
+                                        columnNumber: 33
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/coupons-page.tsx",
-                                lineNumber: 259,
-                                columnNumber: 11
+                                lineNumber: 141,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-sm text-foreground mb-1",
                                 children: coupon.description
                             }, void 0, false, {
                                 fileName: "[project]/components/coupons-page.tsx",
-                                lineNumber: 272,
-                                columnNumber: 11
+                                lineNumber: 145,
+                                columnNumber: 13
                             }, this),
                             coupon.minPurchase && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-xs text-primary mb-1",
                                 children: coupon.minPurchase
                             }, void 0, false, {
                                 fileName: "[project]/components/coupons-page.tsx",
-                                lineNumber: 274,
-                                columnNumber: 13
+                                lineNumber: 146,
+                                columnNumber: 36
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-xs text-muted-foreground",
                                 children: [
-                                    "Действует до: ",
+                                    t.validUntil,
+                                    ": ",
                                     coupon.validUntil
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/coupons-page.tsx",
-                                lineNumber: 276,
-                                columnNumber: 11
+                                lineNumber: 147,
+                                columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/coupons-page.tsx",
-                        lineNumber: 258,
-                        columnNumber: 9
+                        lineNumber: 140,
+                        columnNumber: 11
                     }, this),
                     !coupon.isUsed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: handleCopy,
@@ -4448,15 +4364,15 @@ function CouponCard({ coupon }) {
                                     className: "w-4 h-4"
                                 }, void 0, false, {
                                     fileName: "[project]/components/coupons-page.tsx",
-                                    lineNumber: 293,
-                                    columnNumber: 17
+                                    lineNumber: 151,
+                                    columnNumber: 29
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    children: "Скопировано"
+                                    children: t.copied
                                 }, void 0, false, {
                                     fileName: "[project]/components/coupons-page.tsx",
-                                    lineNumber: 294,
-                                    columnNumber: 17
+                                    lineNumber: 151,
+                                    columnNumber: 58
                                 }, this)
                             ]
                         }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -4465,35 +4381,35 @@ function CouponCard({ coupon }) {
                                     className: "w-4 h-4"
                                 }, void 0, false, {
                                     fileName: "[project]/components/coupons-page.tsx",
-                                    lineNumber: 298,
-                                    columnNumber: 17
+                                    lineNumber: 151,
+                                    columnNumber: 89
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "font-mono",
                                     children: coupon.code
                                 }, void 0, false, {
                                     fileName: "[project]/components/coupons-page.tsx",
-                                    lineNumber: 299,
-                                    columnNumber: 17
+                                    lineNumber: 151,
+                                    columnNumber: 117
                                 }, this)
                             ]
                         }, void 0, true)
                     }, void 0, false, {
                         fileName: "[project]/components/coupons-page.tsx",
-                        lineNumber: 282,
-                        columnNumber: 11
+                        lineNumber: 150,
+                        columnNumber: 15
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/coupons-page.tsx",
-                lineNumber: 257,
-                columnNumber: 7
+                lineNumber: 139,
+                columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/coupons-page.tsx",
-        lineNumber: 247,
-        columnNumber: 5
+        lineNumber: 136,
+        columnNumber: 7
     }, this);
 }
 }),
@@ -4506,6 +4422,7 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$contexts$2f$language$2d$context$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/contexts/language-context.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-ssr] (ecmascript) <export default as X>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$camera$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Camera$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/camera.js [app-ssr] (ecmascript) <export default as Camera>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/check.js [app-ssr] (ecmascript) <export default as Check>");
@@ -4515,7 +4432,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 ;
 ;
 ;
+;
 function PersonalDataModal({ isOpen, onClose }) {
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$contexts$2f$language$2d$context$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLang"])();
     const [formData, setFormData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
         firstName: "Arnat",
         lastName: "Aitzhan",
@@ -4545,11 +4464,11 @@ function PersonalDataModal({ isOpen, onClose }) {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "text-lg font-semibold",
-                            children: "Личные данные"
+                            children: t.personalData.title
                         }, void 0, false, {
                             fileName: "[project]/components/personal-data-modal.tsx",
-                            lineNumber: 42,
-                            columnNumber: 11
+                            lineNumber: 43,
+                            columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: onClose,
@@ -4558,19 +4477,19 @@ function PersonalDataModal({ isOpen, onClose }) {
                                 className: "w-5 h-5"
                             }, void 0, false, {
                                 fileName: "[project]/components/personal-data-modal.tsx",
-                                lineNumber: 47,
-                                columnNumber: 13
+                                lineNumber: 45,
+                                columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/personal-data-modal.tsx",
-                            lineNumber: 43,
-                            columnNumber: 11
+                            lineNumber: 44,
+                            columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/personal-data-modal.tsx",
-                    lineNumber: 41,
-                    columnNumber: 9
+                    lineNumber: 42,
+                    columnNumber: 11
                 }, this),
                 isSaved ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "p-8 flex flex-col items-center justify-center min-h-[300px]",
@@ -4581,27 +4500,27 @@ function PersonalDataModal({ isOpen, onClose }) {
                                 className: "w-10 h-10 text-primary"
                             }, void 0, false, {
                                 fileName: "[project]/components/personal-data-modal.tsx",
-                                lineNumber: 54,
-                                columnNumber: 15
+                                lineNumber: 52,
+                                columnNumber: 19
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/personal-data-modal.tsx",
-                            lineNumber: 53,
-                            columnNumber: 13
+                            lineNumber: 51,
+                            columnNumber: 17
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                             className: "text-xl font-semibold",
-                            children: "Данные сохранены!"
+                            children: t.personalData.saved
                         }, void 0, false, {
                             fileName: "[project]/components/personal-data-modal.tsx",
-                            lineNumber: 56,
-                            columnNumber: 13
+                            lineNumber: 54,
+                            columnNumber: 17
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/personal-data-modal.tsx",
-                    lineNumber: 52,
-                    columnNumber: 11
+                    lineNumber: 50,
+                    columnNumber: 15
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "p-4 overflow-y-auto max-h-[70vh]",
                     children: [
@@ -4620,13 +4539,13 @@ function PersonalDataModal({ isOpen, onClose }) {
                                             className: "object-cover"
                                         }, void 0, false, {
                                             fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 64,
-                                            columnNumber: 19
+                                            lineNumber: 62,
+                                            columnNumber: 23
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/personal-data-modal.tsx",
-                                        lineNumber: 63,
-                                        columnNumber: 17
+                                        lineNumber: 61,
+                                        columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         className: "absolute bottom-0 right-0 w-8 h-8 rounded-full bg-primary flex items-center justify-center",
@@ -4634,24 +4553,24 @@ function PersonalDataModal({ isOpen, onClose }) {
                                             className: "w-4 h-4 text-primary-foreground"
                                         }, void 0, false, {
                                             fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 73,
-                                            columnNumber: 19
+                                            lineNumber: 71,
+                                            columnNumber: 23
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/personal-data-modal.tsx",
-                                        lineNumber: 72,
-                                        columnNumber: 17
+                                        lineNumber: 70,
+                                        columnNumber: 21
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/personal-data-modal.tsx",
-                                lineNumber: 62,
-                                columnNumber: 15
+                                lineNumber: 60,
+                                columnNumber: 19
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/personal-data-modal.tsx",
-                            lineNumber: 61,
-                            columnNumber: 13
+                            lineNumber: 59,
+                            columnNumber: 17
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "space-y-4",
@@ -4663,11 +4582,11 @@ function PersonalDataModal({ isOpen, onClose }) {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                     className: "text-sm text-muted-foreground mb-1 block",
-                                                    children: "Имя"
+                                                    children: t.personalData.firstName
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/personal-data-modal.tsx",
-                                                    lineNumber: 82,
-                                                    columnNumber: 19
+                                                    lineNumber: 80,
+                                                    columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                     type: "text",
@@ -4679,24 +4598,24 @@ function PersonalDataModal({ isOpen, onClose }) {
                                                     className: "w-full px-4 py-3 rounded-xl bg-secondary border border-border focus:border-primary focus:outline-none transition-colors"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/personal-data-modal.tsx",
-                                                    lineNumber: 83,
-                                                    columnNumber: 19
+                                                    lineNumber: 81,
+                                                    columnNumber: 23
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 81,
-                                            columnNumber: 17
+                                            lineNumber: 79,
+                                            columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                     className: "text-sm text-muted-foreground mb-1 block",
-                                                    children: "Фамилия"
+                                                    children: t.personalData.lastName
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/personal-data-modal.tsx",
-                                                    lineNumber: 91,
-                                                    columnNumber: 19
+                                                    lineNumber: 89,
+                                                    columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                     type: "text",
@@ -4708,20 +4627,20 @@ function PersonalDataModal({ isOpen, onClose }) {
                                                     className: "w-full px-4 py-3 rounded-xl bg-secondary border border-border focus:border-primary focus:outline-none transition-colors"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/personal-data-modal.tsx",
-                                                    lineNumber: 92,
-                                                    columnNumber: 19
+                                                    lineNumber: 90,
+                                                    columnNumber: 23
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 90,
-                                            columnNumber: 17
+                                            lineNumber: 88,
+                                            columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/personal-data-modal.tsx",
-                                    lineNumber: 80,
-                                    columnNumber: 15
+                                    lineNumber: 78,
+                                    columnNumber: 19
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
@@ -4730,8 +4649,8 @@ function PersonalDataModal({ isOpen, onClose }) {
                                             children: "Email"
                                         }, void 0, false, {
                                             fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 102,
-                                            columnNumber: 17
+                                            lineNumber: 100,
+                                            columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                             type: "email",
@@ -4743,24 +4662,24 @@ function PersonalDataModal({ isOpen, onClose }) {
                                             className: "w-full px-4 py-3 rounded-xl bg-secondary border border-border focus:border-primary focus:outline-none transition-colors"
                                         }, void 0, false, {
                                             fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 103,
-                                            columnNumber: 17
+                                            lineNumber: 101,
+                                            columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/personal-data-modal.tsx",
-                                    lineNumber: 101,
-                                    columnNumber: 15
+                                    lineNumber: 99,
+                                    columnNumber: 19
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                             className: "text-sm text-muted-foreground mb-1 block",
-                                            children: "Телефон"
+                                            children: t.personalData.phone
                                         }, void 0, false, {
                                             fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 112,
-                                            columnNumber: 17
+                                            lineNumber: 110,
+                                            columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                             type: "tel",
@@ -4772,24 +4691,24 @@ function PersonalDataModal({ isOpen, onClose }) {
                                             className: "w-full px-4 py-3 rounded-xl bg-secondary border border-border focus:border-primary focus:outline-none transition-colors"
                                         }, void 0, false, {
                                             fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 113,
-                                            columnNumber: 17
+                                            lineNumber: 111,
+                                            columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/personal-data-modal.tsx",
-                                    lineNumber: 111,
-                                    columnNumber: 15
+                                    lineNumber: 109,
+                                    columnNumber: 19
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                             className: "text-sm text-muted-foreground mb-1 block",
-                                            children: "Компания"
+                                            children: t.personalData.company
                                         }, void 0, false, {
                                             fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 122,
-                                            columnNumber: 17
+                                            lineNumber: 120,
+                                            columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                             type: "text",
@@ -4801,24 +4720,24 @@ function PersonalDataModal({ isOpen, onClose }) {
                                             className: "w-full px-4 py-3 rounded-xl bg-secondary border border-border focus:border-primary focus:outline-none transition-colors"
                                         }, void 0, false, {
                                             fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 123,
-                                            columnNumber: 17
+                                            lineNumber: 121,
+                                            columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/personal-data-modal.tsx",
-                                    lineNumber: 121,
-                                    columnNumber: 15
+                                    lineNumber: 119,
+                                    columnNumber: 19
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                             className: "text-sm text-muted-foreground mb-1 block",
-                                            children: "Должность"
+                                            children: t.personalData.position
                                         }, void 0, false, {
                                             fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 132,
-                                            columnNumber: 17
+                                            lineNumber: 130,
+                                            columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                             type: "text",
@@ -4830,46 +4749,46 @@ function PersonalDataModal({ isOpen, onClose }) {
                                             className: "w-full px-4 py-3 rounded-xl bg-secondary border border-border focus:border-primary focus:outline-none transition-colors"
                                         }, void 0, false, {
                                             fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 133,
-                                            columnNumber: 17
+                                            lineNumber: 131,
+                                            columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/personal-data-modal.tsx",
-                                    lineNumber: 131,
-                                    columnNumber: 15
+                                    lineNumber: 129,
+                                    columnNumber: 19
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/personal-data-modal.tsx",
-                            lineNumber: 79,
-                            columnNumber: 13
+                            lineNumber: 77,
+                            columnNumber: 17
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: handleSave,
                             className: "w-full mt-6 py-4 rounded-xl bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors",
-                            children: "Сохранить"
+                            children: t.personalData.save
                         }, void 0, false, {
                             fileName: "[project]/components/personal-data-modal.tsx",
-                            lineNumber: 143,
-                            columnNumber: 13
+                            lineNumber: 141,
+                            columnNumber: 17
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/personal-data-modal.tsx",
-                    lineNumber: 59,
-                    columnNumber: 11
+                    lineNumber: 57,
+                    columnNumber: 15
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/personal-data-modal.tsx",
-            lineNumber: 36,
-            columnNumber: 7
+            lineNumber: 37,
+            columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/personal-data-modal.tsx",
-        lineNumber: 35,
-        columnNumber: 5
+        lineNumber: 36,
+        columnNumber: 7
     }, this);
 }
 }),
@@ -4888,7 +4807,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/check.js [app-ssr] (ecmascript) <export default as Check>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$themes$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-themes/dist/index.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$contexts$2f$language$2d$context$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/contexts/language-context.tsx [app-ssr] (ecmascript)");
 "use client";
 ;
 ;
@@ -4905,16 +4824,11 @@ const languages = [
         id: "kz",
         name: "Қазақша",
         flag: "🇰🇿"
-    },
-    {
-        id: "en",
-        name: "English",
-        flag: "🇬🇧"
     }
 ];
 function SettingsModal({ isOpen, onClose, type }) {
     const { theme, setTheme } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$themes$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTheme"])();
-    const [selectedLang, setSelectedLang] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("ru");
+    const { lang, setLang, t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$contexts$2f$language$2d$context$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLang"])();
     if (!isOpen) return null;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "fixed inset-0 z-50 bg-black/50 flex items-end",
@@ -4928,11 +4842,11 @@ function SettingsModal({ isOpen, onClose, type }) {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "text-lg font-semibold",
-                            children: type === "theme" ? "Тема оформления" : "Выбор языка"
+                            children: type === "theme" ? t.settings.themeTitle : t.settings.languageTitle
                         }, void 0, false, {
                             fileName: "[project]/components/settings-modal.tsx",
                             lineNumber: 34,
-                            columnNumber: 11
+                            columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: onClose,
@@ -4942,18 +4856,18 @@ function SettingsModal({ isOpen, onClose, type }) {
                             }, void 0, false, {
                                 fileName: "[project]/components/settings-modal.tsx",
                                 lineNumber: 41,
-                                columnNumber: 13
+                                columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/settings-modal.tsx",
                             lineNumber: 37,
-                            columnNumber: 11
+                            columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/settings-modal.tsx",
                     lineNumber: 33,
-                    columnNumber: 9
+                    columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "p-4 pb-8",
@@ -4971,33 +4885,33 @@ function SettingsModal({ isOpen, onClose, type }) {
                                         }, void 0, false, {
                                             fileName: "[project]/components/settings-modal.tsx",
                                             lineNumber: 58,
-                                            columnNumber: 19
+                                            columnNumber: 23
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/settings-modal.tsx",
                                         lineNumber: 57,
-                                        columnNumber: 17
+                                        columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "text-sm font-medium",
-                                        children: "Светлая"
+                                        children: t.settings.light
                                     }, void 0, false, {
                                         fileName: "[project]/components/settings-modal.tsx",
                                         lineNumber: 60,
-                                        columnNumber: 17
+                                        columnNumber: 21
                                     }, this),
                                     theme === "light" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
                                         className: "w-4 h-4 text-primary"
                                     }, void 0, false, {
                                         fileName: "[project]/components/settings-modal.tsx",
                                         lineNumber: 62,
-                                        columnNumber: 19
+                                        columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/settings-modal.tsx",
                                 lineNumber: 48,
-                                columnNumber: 15
+                                columnNumber: 19
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setTheme("dark"),
@@ -5010,33 +4924,33 @@ function SettingsModal({ isOpen, onClose, type }) {
                                         }, void 0, false, {
                                             fileName: "[project]/components/settings-modal.tsx",
                                             lineNumber: 76,
-                                            columnNumber: 19
+                                            columnNumber: 23
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/settings-modal.tsx",
                                         lineNumber: 75,
-                                        columnNumber: 17
+                                        columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "text-sm font-medium",
-                                        children: "Тёмная"
+                                        children: t.settings.dark
                                     }, void 0, false, {
                                         fileName: "[project]/components/settings-modal.tsx",
                                         lineNumber: 78,
-                                        columnNumber: 17
+                                        columnNumber: 21
                                     }, this),
                                     theme === "dark" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
                                         className: "w-4 h-4 text-primary"
                                     }, void 0, false, {
                                         fileName: "[project]/components/settings-modal.tsx",
                                         lineNumber: 80,
-                                        columnNumber: 19
+                                        columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/settings-modal.tsx",
                                 lineNumber: 66,
-                                columnNumber: 15
+                                columnNumber: 19
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setTheme("system"),
@@ -5049,103 +4963,106 @@ function SettingsModal({ isOpen, onClose, type }) {
                                         }, void 0, false, {
                                             fileName: "[project]/components/settings-modal.tsx",
                                             lineNumber: 94,
-                                            columnNumber: 19
+                                            columnNumber: 23
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/settings-modal.tsx",
                                         lineNumber: 93,
-                                        columnNumber: 17
+                                        columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "text-sm font-medium",
-                                        children: "Система"
+                                        children: t.settings.system
                                     }, void 0, false, {
                                         fileName: "[project]/components/settings-modal.tsx",
                                         lineNumber: 96,
-                                        columnNumber: 17
+                                        columnNumber: 21
                                     }, this),
                                     theme === "system" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
                                         className: "w-4 h-4 text-primary"
                                     }, void 0, false, {
                                         fileName: "[project]/components/settings-modal.tsx",
                                         lineNumber: 98,
-                                        columnNumber: 19
+                                        columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/settings-modal.tsx",
                                 lineNumber: 84,
-                                columnNumber: 15
+                                columnNumber: 19
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/settings-modal.tsx",
                         lineNumber: 47,
-                        columnNumber: 13
+                        columnNumber: 17
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "space-y-3",
-                        children: languages.map((lang)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: ()=>setSelectedLang(lang.id),
-                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("w-full flex items-center justify-between p-4 rounded-xl border transition-all", selectedLang === lang.id ? "border-primary bg-primary/10" : "border-border hover:border-primary/50"),
+                        children: languages.map((language)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                onClick: ()=>{
+                                    setLang(language.id);
+                                    onClose();
+                                },
+                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("w-full flex items-center justify-between p-4 rounded-xl border transition-all", lang === language.id ? "border-primary bg-primary/10" : "border-border hover:border-primary/50"),
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex items-center gap-3",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-2xl",
-                                                children: lang.flag
+                                                children: language.flag
                                             }, void 0, false, {
                                                 fileName: "[project]/components/settings-modal.tsx",
-                                                lineNumber: 116,
-                                                columnNumber: 21
+                                                lineNumber: 119,
+                                                columnNumber: 27
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "font-medium",
-                                                children: lang.name
+                                                children: language.name
                                             }, void 0, false, {
                                                 fileName: "[project]/components/settings-modal.tsx",
-                                                lineNumber: 117,
-                                                columnNumber: 21
+                                                lineNumber: 120,
+                                                columnNumber: 27
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/settings-modal.tsx",
-                                        lineNumber: 115,
-                                        columnNumber: 19
+                                        lineNumber: 118,
+                                        columnNumber: 25
                                     }, this),
-                                    selectedLang === lang.id && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
+                                    lang === language.id && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
                                         className: "w-5 h-5 text-primary"
                                     }, void 0, false, {
                                         fileName: "[project]/components/settings-modal.tsx",
-                                        lineNumber: 120,
-                                        columnNumber: 21
+                                        lineNumber: 123,
+                                        columnNumber: 29
                                     }, this)
                                 ]
-                            }, lang.id, true, {
+                            }, language.id, true, {
                                 fileName: "[project]/components/settings-modal.tsx",
                                 lineNumber: 105,
-                                columnNumber: 17
+                                columnNumber: 23
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/settings-modal.tsx",
                         lineNumber: 103,
-                        columnNumber: 13
+                        columnNumber: 17
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/settings-modal.tsx",
                     lineNumber: 45,
-                    columnNumber: 9
+                    columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/settings-modal.tsx",
             lineNumber: 28,
-            columnNumber: 7
+            columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/settings-modal.tsx",
         lineNumber: 27,
-        columnNumber: 5
+        columnNumber: 7
     }, this);
 }
 }),
@@ -5172,6 +5089,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sun.js [app-ssr] (ecmascript) <export default as Sun>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$themes$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-themes/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$contexts$2f$language$2d$context$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/contexts/language-context.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$notifications$2d$panel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/notifications-panel.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$personal$2d$data$2d$modal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/personal-data-modal.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$settings$2d$modal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/settings-modal.tsx [app-ssr] (ecmascript)");
@@ -5184,8 +5102,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$settings$2d$mo
 ;
 ;
 ;
+;
 function ProfilePage() {
     const { theme, setTheme } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$themes$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTheme"])();
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$contexts$2f$language$2d$context$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLang"])();
     const [user, setUser] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const [showNotifications, setShowNotifications] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [showPersonalData, setShowPersonalData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -5195,9 +5115,6 @@ function ProfilePage() {
         const u = localStorage.getItem("user");
         if (u) setUser(JSON.parse(u));
     }, []);
-    // =========================
-    // AVATAR LOGIC
-    // =========================
     const getInitials = (name)=>{
         if (!name) return "U";
         const parts = name.trim().split(" ");
@@ -5247,116 +5164,116 @@ function ProfilePage() {
     const personalMenuItems = [
         {
             id: "personal",
-            label: "личные данные",
+            label: t.profile.personalData,
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
                 className: "w-5 h-5"
             }, void 0, false, {
                 fileName: "[project]/components/profile-page.tsx",
-                lineNumber: 107,
-                columnNumber: 57
+                lineNumber: 100,
+                columnNumber: 64
             }, this)
         }
     ];
     const coworkingMenuItems = [
         {
             id: "access",
-            label: "данные для входа в коворкинг",
+            label: t.profile.accessData,
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Building2$3e$__["Building2"], {
                 className: "w-5 h-5"
             }, void 0, false, {
                 fileName: "[project]/components/profile-page.tsx",
-                lineNumber: 111,
-                columnNumber: 70
+                lineNumber: 104,
+                columnNumber: 60
             }, this)
         },
         {
             id: "balance",
-            label: "лимитный счет",
+            label: t.profile.limitAccount,
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$credit$2d$card$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CreditCard$3e$__["CreditCard"], {
                 className: "w-5 h-5"
             }, void 0, false, {
                 fileName: "[project]/components/profile-page.tsx",
-                lineNumber: 112,
-                columnNumber: 56
+                lineNumber: 105,
+                columnNumber: 63
             }, this)
         },
         {
             id: "community",
-            label: "моя карточка в сообществе",
+            label: t.profile.communityCard,
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"], {
                 className: "w-5 h-5"
             }, void 0, false, {
                 fileName: "[project]/components/profile-page.tsx",
-                lineNumber: 113,
-                columnNumber: 70
+                lineNumber: 106,
+                columnNumber: 66
             }, this)
         }
     ];
     const crmMenuItem = {
         id: "crm",
-        label: "перейти в CRM",
+        label: t.profile.goToCrm,
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Building2$3e$__["Building2"], {
             className: "w-5 h-5"
         }, void 0, false, {
             fileName: "[project]/components/profile-page.tsx",
-            lineNumber: 119,
+            lineNumber: 112,
             columnNumber: 15
         }, this)
     };
     const supportMenuItems = [
         {
             id: "contact",
-            label: "связаться с нами",
+            label: t.profile.contact,
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
                 className: "w-5 h-5"
             }, void 0, false, {
                 fileName: "[project]/components/profile-page.tsx",
-                lineNumber: 123,
-                columnNumber: 59
+                lineNumber: 116,
+                columnNumber: 58
             }, this)
         },
         {
             id: "about",
-            label: "о приложении",
+            label: t.profile.about,
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$info$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Info$3e$__["Info"], {
                 className: "w-5 h-5"
             }, void 0, false, {
                 fileName: "[project]/components/profile-page.tsx",
-                lineNumber: 124,
-                columnNumber: 53
+                lineNumber: 117,
+                columnNumber: 54
             }, this)
         },
         {
             id: "language",
-            label: "выбор языка",
+            label: t.profile.language,
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$languages$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Languages$3e$__["Languages"], {
                 className: "w-5 h-5"
             }, void 0, false, {
                 fileName: "[project]/components/profile-page.tsx",
-                lineNumber: 125,
-                columnNumber: 55
+                lineNumber: 118,
+                columnNumber: 60
             }, this)
         },
         {
             id: "theme",
-            label: "тема оформления",
+            label: t.profile.theme,
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__["Moon"], {
                 className: "w-5 h-5"
             }, void 0, false, {
                 fileName: "[project]/components/profile-page.tsx",
-                lineNumber: 126,
-                columnNumber: 56
+                lineNumber: 119,
+                columnNumber: 54
             }, this)
         },
         {
             id: "logout",
-            label: "выйти из аккаунта",
+            label: t.profile.logout,
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__["LogOut"], {
                 className: "w-5 h-5"
             }, void 0, false, {
                 fileName: "[project]/components/profile-page.tsx",
-                lineNumber: 127,
-                columnNumber: 59
+                lineNumber: 120,
+                columnNumber: 56
             }, this),
             isDestructive: true
         }
@@ -5374,18 +5291,18 @@ function ProfilePage() {
                             className: "w-5 h-5"
                         }, void 0, false, {
                             fileName: "[project]/components/profile-page.tsx",
-                            lineNumber: 140,
+                            lineNumber: 133,
                             columnNumber: 27
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__["Moon"], {
                             className: "w-5 h-5"
                         }, void 0, false, {
                             fileName: "[project]/components/profile-page.tsx",
-                            lineNumber: 141,
+                            lineNumber: 134,
                             columnNumber: 27
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/profile-page.tsx",
-                        lineNumber: 135,
+                        lineNumber: 128,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -5393,7 +5310,7 @@ function ProfilePage() {
                         children: "crm"
                     }, void 0, false, {
                         fileName: "[project]/components/profile-page.tsx",
-                        lineNumber: 145,
+                        lineNumber: 138,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -5404,26 +5321,26 @@ function ProfilePage() {
                                 className: "w-5 h-5"
                             }, void 0, false, {
                                 fileName: "[project]/components/profile-page.tsx",
-                                lineNumber: 153,
+                                lineNumber: 146,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "absolute top-2 right-2 w-2 h-2 bg-primary rounded-full"
                             }, void 0, false, {
                                 fileName: "[project]/components/profile-page.tsx",
-                                lineNumber: 154,
+                                lineNumber: 147,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/profile-page.tsx",
-                        lineNumber: 149,
+                        lineNumber: 142,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/profile-page.tsx",
-                lineNumber: 134,
+                lineNumber: 127,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5434,7 +5351,7 @@ function ProfilePage() {
                         children: getInitials(user?.full_name)
                     }, void 0, false, {
                         fileName: "[project]/components/profile-page.tsx",
-                        lineNumber: 162,
+                        lineNumber: 153,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -5442,7 +5359,7 @@ function ProfilePage() {
                         children: user?.full_name || "User"
                     }, void 0, false, {
                         fileName: "[project]/components/profile-page.tsx",
-                        lineNumber: 168,
+                        lineNumber: 159,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5450,7 +5367,7 @@ function ProfilePage() {
                         children: user?.contacts?.value || "no email"
                     }, void 0, false, {
                         fileName: "[project]/components/profile-page.tsx",
-                        lineNumber: 172,
+                        lineNumber: 163,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5458,7 +5375,7 @@ function ProfilePage() {
                         children: user?.groups?.[0]?.name || "user"
                     }, void 0, false, {
                         fileName: "[project]/components/profile-page.tsx",
-                        lineNumber: 176,
+                        lineNumber: 167,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5470,10 +5387,10 @@ function ProfilePage() {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-sm text-muted-foreground",
-                                            children: "Баланс"
+                                            children: t.profile.balance
                                         }, void 0, false, {
                                             fileName: "[project]/components/profile-page.tsx",
-                                            lineNumber: 184,
+                                            lineNumber: 175,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5484,38 +5401,38 @@ function ProfilePage() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/profile-page.tsx",
-                                            lineNumber: 185,
+                                            lineNumber: 176,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/profile-page.tsx",
-                                    lineNumber: 183,
+                                    lineNumber: 174,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     className: "px-4 py-2 bg-primary text-white rounded-xl",
-                                    children: "Пополнить"
+                                    children: t.profile.topUp
                                 }, void 0, false, {
                                     fileName: "[project]/components/profile-page.tsx",
-                                    lineNumber: 189,
+                                    lineNumber: 180,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/profile-page.tsx",
-                            lineNumber: 182,
+                            lineNumber: 173,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/profile-page.tsx",
-                        lineNumber: 181,
+                        lineNumber: 172,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/profile-page.tsx",
-                lineNumber: 159,
+                lineNumber: 152,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5526,7 +5443,7 @@ function ProfilePage() {
                         onItemClick: handleMenuClick
                     }, void 0, false, {
                         fileName: "[project]/components/profile-page.tsx",
-                        lineNumber: 199,
+                        lineNumber: 189,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5534,10 +5451,10 @@ function ProfilePage() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "px-4 py-2 text-xs text-primary",
-                                children: "КОВОРКИНГ"
+                                children: t.profile.coworking
                             }, void 0, false, {
                                 fileName: "[project]/components/profile-page.tsx",
-                                lineNumber: 202,
+                                lineNumber: 192,
                                 columnNumber: 21
                             }, this),
                             coworkingMenuItems.map((item, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuItemRow, {
@@ -5546,13 +5463,13 @@ function ProfilePage() {
                                     onClick: ()=>handleMenuClick(item.id)
                                 }, item.id, false, {
                                     fileName: "[project]/components/profile-page.tsx",
-                                    lineNumber: 204,
+                                    lineNumber: 194,
                                     columnNumber: 25
                                 }, this))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/profile-page.tsx",
-                        lineNumber: 201,
+                        lineNumber: 191,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuSection, {
@@ -5562,7 +5479,7 @@ function ProfilePage() {
                         onItemClick: handleMenuClick
                     }, void 0, false, {
                         fileName: "[project]/components/profile-page.tsx",
-                        lineNumber: 213,
+                        lineNumber: 203,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuSection, {
@@ -5570,13 +5487,13 @@ function ProfilePage() {
                         onItemClick: handleMenuClick
                     }, void 0, false, {
                         fileName: "[project]/components/profile-page.tsx",
-                        lineNumber: 215,
+                        lineNumber: 204,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/profile-page.tsx",
-                lineNumber: 197,
+                lineNumber: 188,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$notifications$2d$panel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NotificationsPanel"], {
@@ -5584,7 +5501,7 @@ function ProfilePage() {
                 onClose: ()=>setShowNotifications(false)
             }, void 0, false, {
                 fileName: "[project]/components/profile-page.tsx",
-                lineNumber: 219,
+                lineNumber: 208,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$personal$2d$data$2d$modal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["PersonalDataModal"], {
@@ -5592,7 +5509,7 @@ function ProfilePage() {
                 onClose: ()=>setShowPersonalData(false)
             }, void 0, false, {
                 fileName: "[project]/components/profile-page.tsx",
-                lineNumber: 224,
+                lineNumber: 213,
                 columnNumber: 13
             }, this),
             settingsModal && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$settings$2d$modal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SettingsModal"], {
@@ -5601,20 +5518,20 @@ function ProfilePage() {
                 type: settingsModal
             }, void 0, false, {
                 fileName: "[project]/components/profile-page.tsx",
-                lineNumber: 230,
+                lineNumber: 219,
                 columnNumber: 17
             }, this),
             showLogoutConfirm && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "fixed inset-0 bg-black/50 flex items-center justify-center",
+                className: "fixed inset-0 bg-black/50 flex items-center justify-center z-50",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "bg-card p-6 rounded-2xl w-[300px]",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                             className: "text-center font-semibold",
-                            children: "Выйти?"
+                            children: t.profile.logoutConfirm
                         }, void 0, false, {
                             fileName: "[project]/components/profile-page.tsx",
-                            lineNumber: 242,
+                            lineNumber: 230,
                             columnNumber: 25
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5623,46 +5540,46 @@ function ProfilePage() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>setShowLogoutConfirm(false),
                                     className: "flex-1 border rounded-xl py-2",
-                                    children: "Отмена"
+                                    children: t.profile.logoutCancel
                                 }, void 0, false, {
                                     fileName: "[project]/components/profile-page.tsx",
-                                    lineNumber: 245,
+                                    lineNumber: 232,
                                     columnNumber: 29
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: logout,
                                     className: "flex-1 bg-red-500 text-white rounded-xl py-2",
-                                    children: "Выйти"
+                                    children: t.profile.logoutConfirmBtn
                                 }, void 0, false, {
                                     fileName: "[project]/components/profile-page.tsx",
-                                    lineNumber: 252,
+                                    lineNumber: 238,
                                     columnNumber: 29
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/profile-page.tsx",
-                            lineNumber: 244,
+                            lineNumber: 231,
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/profile-page.tsx",
-                    lineNumber: 240,
+                    lineNumber: 229,
                     columnNumber: 21
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/profile-page.tsx",
-                lineNumber: 239,
+                lineNumber: 228,
                 columnNumber: 17
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/profile-page.tsx",
-        lineNumber: 131,
+        lineNumber: 124,
         columnNumber: 9
     }, this);
 }
-/* ================= UI ================= */ function MenuSection({ items, onItemClick }) {
+function MenuSection({ items, onItemClick }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "bg-card rounded-2xl overflow-hidden",
         children: items.map((item, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MenuItemRow, {
@@ -5671,12 +5588,12 @@ function ProfilePage() {
                 onClick: ()=>onItemClick(item.id)
             }, item.id, false, {
                 fileName: "[project]/components/profile-page.tsx",
-                lineNumber: 273,
+                lineNumber: 256,
                 columnNumber: 17
             }, this))
     }, void 0, false, {
         fileName: "[project]/components/profile-page.tsx",
-        lineNumber: 271,
+        lineNumber: 254,
         columnNumber: 9
     }, this);
 }
@@ -5690,26 +5607,26 @@ function MenuItemRow({ item, isLast, onClick }) {
                 children: item.label
             }, void 0, false, {
                 fileName: "[project]/components/profile-page.tsx",
-                lineNumber: 293,
+                lineNumber: 276,
                 columnNumber: 13
             }, this),
             item.isDestructive ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$log$2d$out$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__LogOut$3e$__["LogOut"], {
                 className: "w-5 h-5 text-red-500"
             }, void 0, false, {
                 fileName: "[project]/components/profile-page.tsx",
-                lineNumber: 298,
+                lineNumber: 281,
                 columnNumber: 17
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
                 className: "w-5 h-5 opacity-60"
             }, void 0, false, {
                 fileName: "[project]/components/profile-page.tsx",
-                lineNumber: 300,
+                lineNumber: 283,
                 columnNumber: 17
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/profile-page.tsx",
-        lineNumber: 286,
+        lineNumber: 269,
         columnNumber: 9
     }, this);
 }
