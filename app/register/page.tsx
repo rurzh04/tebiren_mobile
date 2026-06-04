@@ -121,7 +121,7 @@ export default function RegisterPage() {
                                 <div style={c.lbl}>Имя</div>
                                 <div style={c.field}>
                                     <span style={{color:'#505060'}}>👤</span>
-                                    <input style={c.inp} type="text" placeholder="Arnat"
+                                    <input style={c.inp} type="text" placeholder="Myrzabek"
                                            value={form.middle_name} onChange={e=>set('middle_name',e.target.value)} />
                                 </div>
                             </div>
@@ -129,7 +129,7 @@ export default function RegisterPage() {
                                 <div style={c.lbl}>Фамилия</div>
                                 <div style={c.field}>
                                     <span style={{color:'#505060'}}>👤</span>
-                                    <input style={c.inp} type="text" placeholder="Aithzan"
+                                    <input style={c.inp} type="text" placeholder="Kuatbai"
                                            value={form.first_name} onChange={e=>set('first_name',e.target.value)} />
                                 </div>
                             </div>
@@ -137,14 +137,14 @@ export default function RegisterPage() {
                         <div style={c.lbl}>Отчество</div>
                         <div style={c.field}>
                             <span style={{color:'#505060'}}>👤</span>
-                            <input style={c.inp} type="text" placeholder="Erzhanuly"
+                            <input style={c.inp} type="text" placeholder="Nurlanuly"
                                    value={form.last_name} onChange={e=>set('last_name',e.target.value)} />
                         </div>
 
                         <div style={c.lbl}>Никнейм</div>
                         <div style={c.field}>
                             <span style={{color:'#505060',fontSize:17}}>@</span>
-                            <input style={c.inp} type="text" placeholder="rurzh"
+                            <input style={c.inp} type="text" placeholder="myrzabekkuatbay"
                                    value={form.nickname} onChange={e=>set('nickname',e.target.value)} />
                         </div>
 
