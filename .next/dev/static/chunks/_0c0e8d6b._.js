@@ -4567,13 +4567,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$contexts$2f$language$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/contexts/language-context.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as X>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$camera$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Camera$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/camera.js [app-client] (ecmascript) <export default as Camera>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/check.js [app-client] (ecmascript) <export default as Check>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
-;
 ;
 ;
 ;
@@ -4581,21 +4578,59 @@ function PersonalDataModal({ isOpen, onClose }) {
     _s();
     const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$contexts$2f$language$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLang"])();
     const [formData, setFormData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
-        firstName: "Arnat",
-        lastName: "Aitzhan",
-        email: "arnat@example.com",
-        phone: "+7 708 480 9418",
-        company: "Tech Corp",
-        position: "Developer"
+        full_name: "",
+        email: "",
+        nickname: ""
     });
     const [isSaved, setIsSaved] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "PersonalDataModal.useEffect": ()=>{
+            if (!isOpen) return;
+            try {
+                const raw = localStorage.getItem("user");
+                if (!raw) return;
+                const u = JSON.parse(raw);
+                // email: contacts может быть массивом или объектом
+                let email = "";
+                if (Array.isArray(u.contacts)) {
+                    email = u.contacts.find({
+                        "PersonalDataModal.useEffect": (c)=>c.vendor === "email"
+                    }["PersonalDataModal.useEffect"])?.value ?? "";
+                } else if (u.contacts?.vendor === "email") {
+                    email = u.contacts.value ?? "";
+                }
+                setFormData({
+                    full_name: u.full_name ?? "",
+                    email,
+                    nickname: u.nickname ?? ""
+                });
+            } catch  {}
+        }
+    }["PersonalDataModal.useEffect"], [
+        isOpen
+    ]);
     if (!isOpen) return null;
     const handleSave = ()=>{
+        // Сохраняем обновлённые данные обратно в localStorage
+        try {
+            const raw = localStorage.getItem("user");
+            const u = raw ? JSON.parse(raw) : {};
+            localStorage.setItem("user", JSON.stringify({
+                ...u,
+                full_name: formData.full_name,
+                nickname: formData.nickname
+            }));
+        } catch  {}
         setIsSaved(true);
         setTimeout(()=>{
             setIsSaved(false);
             onClose();
-        }, 1500);
+        }, 1400);
+    };
+    // Инициалы из full_name
+    const getInitials = (name)=>{
+        const parts = name.trim().split(" ");
+        return (parts[0]?.[0] ?? "") + (parts[1]?.[0] ?? "");
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "fixed inset-0 z-50 bg-black/50 flex items-end",
@@ -4612,8 +4647,8 @@ function PersonalDataModal({ isOpen, onClose }) {
                             children: t.personalData.title
                         }, void 0, false, {
                             fileName: "[project]/components/personal-data-modal.tsx",
-                            lineNumber: 43,
-                            columnNumber: 13
+                            lineNumber: 71,
+                            columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: onClose,
@@ -4622,22 +4657,22 @@ function PersonalDataModal({ isOpen, onClose }) {
                                 className: "w-5 h-5"
                             }, void 0, false, {
                                 fileName: "[project]/components/personal-data-modal.tsx",
-                                lineNumber: 45,
-                                columnNumber: 15
+                                lineNumber: 73,
+                                columnNumber: 25
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/personal-data-modal.tsx",
-                            lineNumber: 44,
-                            columnNumber: 13
+                            lineNumber: 72,
+                            columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/personal-data-modal.tsx",
-                    lineNumber: 42,
-                    columnNumber: 11
+                    lineNumber: 70,
+                    columnNumber: 17
                 }, this),
                 isSaved ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "p-8 flex flex-col items-center justify-center min-h-[300px]",
+                    className: "p-8 flex flex-col items-center justify-center min-h-[260px]",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "w-20 h-20 rounded-full bg-primary/20 flex items-center justify-center mb-4 animate-in zoom-in",
@@ -4645,147 +4680,105 @@ function PersonalDataModal({ isOpen, onClose }) {
                                 className: "w-10 h-10 text-primary"
                             }, void 0, false, {
                                 fileName: "[project]/components/personal-data-modal.tsx",
-                                lineNumber: 52,
-                                columnNumber: 19
+                                lineNumber: 80,
+                                columnNumber: 29
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/personal-data-modal.tsx",
-                            lineNumber: 51,
-                            columnNumber: 17
+                            lineNumber: 79,
+                            columnNumber: 25
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                             className: "text-xl font-semibold",
                             children: t.personalData.saved
                         }, void 0, false, {
                             fileName: "[project]/components/personal-data-modal.tsx",
-                            lineNumber: 54,
-                            columnNumber: 17
+                            lineNumber: 82,
+                            columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/personal-data-modal.tsx",
-                    lineNumber: 50,
-                    columnNumber: 15
+                    lineNumber: 78,
+                    columnNumber: 21
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "p-4 overflow-y-auto max-h-[70vh]",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex justify-center mb-6",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "relative",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-24 h-24 rounded-full overflow-hidden ring-4 ring-border",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                            src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces",
-                                            alt: "Profile",
-                                            width: 96,
-                                            height: 96,
-                                            className: "object-cover"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 62,
-                                            columnNumber: 23
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/personal-data-modal.tsx",
-                                        lineNumber: 61,
-                                        columnNumber: 21
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        className: "absolute bottom-0 right-0 w-8 h-8 rounded-full bg-primary flex items-center justify-center",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$camera$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Camera$3e$__["Camera"], {
-                                            className: "w-4 h-4 text-primary-foreground"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 71,
-                                            columnNumber: 23
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/personal-data-modal.tsx",
-                                        lineNumber: 70,
-                                        columnNumber: 21
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                                className: "w-20 h-20 rounded-full bg-primary/20 flex items-center justify-center text-primary text-2xl font-bold ring-4 ring-border",
+                                children: getInitials(formData.full_name) || "?"
+                            }, void 0, false, {
                                 fileName: "[project]/components/personal-data-modal.tsx",
-                                lineNumber: 60,
-                                columnNumber: 19
+                                lineNumber: 88,
+                                columnNumber: 29
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/personal-data-modal.tsx",
-                            lineNumber: 59,
-                            columnNumber: 17
+                            lineNumber: 87,
+                            columnNumber: 25
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "space-y-4",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "grid grid-cols-2 gap-4",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                    className: "text-sm text-muted-foreground mb-1 block",
-                                                    children: t.personalData.firstName
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/personal-data-modal.tsx",
-                                                    lineNumber: 80,
-                                                    columnNumber: 23
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                    type: "text",
-                                                    value: formData.firstName,
-                                                    onChange: (e)=>setFormData({
-                                                            ...formData,
-                                                            firstName: e.target.value
-                                                        }),
-                                                    className: "w-full px-4 py-3 rounded-xl bg-secondary border border-border focus:border-primary focus:outline-none transition-colors"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/personal-data-modal.tsx",
-                                                    lineNumber: 81,
-                                                    columnNumber: 23
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                            className: "text-sm text-muted-foreground mb-1 block",
+                                            children: t.personalData.firstName
+                                        }, void 0, false, {
                                             fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 79,
-                                            columnNumber: 21
+                                            lineNumber: 96,
+                                            columnNumber: 33
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                    className: "text-sm text-muted-foreground mb-1 block",
-                                                    children: t.personalData.lastName
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/personal-data-modal.tsx",
-                                                    lineNumber: 89,
-                                                    columnNumber: 23
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                    type: "text",
-                                                    value: formData.lastName,
-                                                    onChange: (e)=>setFormData({
-                                                            ...formData,
-                                                            lastName: e.target.value
-                                                        }),
-                                                    className: "w-full px-4 py-3 rounded-xl bg-secondary border border-border focus:border-primary focus:outline-none transition-colors"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/personal-data-modal.tsx",
-                                                    lineNumber: 90,
-                                                    columnNumber: 23
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                            type: "text",
+                                            value: formData.full_name,
+                                            onChange: (e)=>setFormData({
+                                                    ...formData,
+                                                    full_name: e.target.value
+                                                }),
+                                            className: "w-full px-4 py-3 rounded-xl bg-secondary border border-border focus:border-primary focus:outline-none transition-colors"
+                                        }, void 0, false, {
                                             fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 88,
-                                            columnNumber: 21
+                                            lineNumber: 99,
+                                            columnNumber: 33
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/personal-data-modal.tsx",
-                                    lineNumber: 78,
-                                    columnNumber: 19
+                                    lineNumber: 95,
+                                    columnNumber: 29
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                            className: "text-sm text-muted-foreground mb-1 block",
+                                            children: "Никнейм"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/personal-data-modal.tsx",
+                                            lineNumber: 108,
+                                            columnNumber: 33
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                            type: "text",
+                                            value: formData.nickname,
+                                            onChange: (e)=>setFormData({
+                                                    ...formData,
+                                                    nickname: e.target.value
+                                                }),
+                                            className: "w-full px-4 py-3 rounded-xl bg-secondary border border-border focus:border-primary focus:outline-none transition-colors"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/personal-data-modal.tsx",
+                                            lineNumber: 109,
+                                            columnNumber: 33
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/personal-data-modal.tsx",
+                                    lineNumber: 107,
+                                    columnNumber: 29
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
@@ -4794,120 +4787,30 @@ function PersonalDataModal({ isOpen, onClose }) {
                                             children: "Email"
                                         }, void 0, false, {
                                             fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 100,
-                                            columnNumber: 21
+                                            lineNumber: 118,
+                                            columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                             type: "email",
                                             value: formData.email,
-                                            onChange: (e)=>setFormData({
-                                                    ...formData,
-                                                    email: e.target.value
-                                                }),
-                                            className: "w-full px-4 py-3 rounded-xl bg-secondary border border-border focus:border-primary focus:outline-none transition-colors"
+                                            disabled: true,
+                                            className: "w-full px-4 py-3 rounded-xl bg-secondary border border-border text-muted-foreground cursor-not-allowed"
                                         }, void 0, false, {
                                             fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 101,
-                                            columnNumber: 21
+                                            lineNumber: 119,
+                                            columnNumber: 33
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/personal-data-modal.tsx",
-                                    lineNumber: 99,
-                                    columnNumber: 19
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                            className: "text-sm text-muted-foreground mb-1 block",
-                                            children: t.personalData.phone
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 110,
-                                            columnNumber: 21
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                            type: "tel",
-                                            value: formData.phone,
-                                            onChange: (e)=>setFormData({
-                                                    ...formData,
-                                                    phone: e.target.value
-                                                }),
-                                            className: "w-full px-4 py-3 rounded-xl bg-secondary border border-border focus:border-primary focus:outline-none transition-colors"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 111,
-                                            columnNumber: 21
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/personal-data-modal.tsx",
-                                    lineNumber: 109,
-                                    columnNumber: 19
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                            className: "text-sm text-muted-foreground mb-1 block",
-                                            children: t.personalData.company
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 120,
-                                            columnNumber: 21
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                            type: "text",
-                                            value: formData.company,
-                                            onChange: (e)=>setFormData({
-                                                    ...formData,
-                                                    company: e.target.value
-                                                }),
-                                            className: "w-full px-4 py-3 rounded-xl bg-secondary border border-border focus:border-primary focus:outline-none transition-colors"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 121,
-                                            columnNumber: 21
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/personal-data-modal.tsx",
-                                    lineNumber: 119,
-                                    columnNumber: 19
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                            className: "text-sm text-muted-foreground mb-1 block",
-                                            children: t.personalData.position
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 130,
-                                            columnNumber: 21
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                            type: "text",
-                                            value: formData.position,
-                                            onChange: (e)=>setFormData({
-                                                    ...formData,
-                                                    position: e.target.value
-                                                }),
-                                            className: "w-full px-4 py-3 rounded-xl bg-secondary border border-border focus:border-primary focus:outline-none transition-colors"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/personal-data-modal.tsx",
-                                            lineNumber: 131,
-                                            columnNumber: 21
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/personal-data-modal.tsx",
-                                    lineNumber: 129,
-                                    columnNumber: 19
+                                    lineNumber: 117,
+                                    columnNumber: 29
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/personal-data-modal.tsx",
-                            lineNumber: 77,
-                            columnNumber: 17
+                            lineNumber: 94,
+                            columnNumber: 25
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: handleSave,
@@ -4915,28 +4818,28 @@ function PersonalDataModal({ isOpen, onClose }) {
                             children: t.personalData.save
                         }, void 0, false, {
                             fileName: "[project]/components/personal-data-modal.tsx",
-                            lineNumber: 141,
-                            columnNumber: 17
+                            lineNumber: 128,
+                            columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/personal-data-modal.tsx",
-                    lineNumber: 57,
-                    columnNumber: 15
+                    lineNumber: 85,
+                    columnNumber: 21
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/personal-data-modal.tsx",
-            lineNumber: 37,
-            columnNumber: 9
+            lineNumber: 65,
+            columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/personal-data-modal.tsx",
-        lineNumber: 36,
-        columnNumber: 7
+        lineNumber: 64,
+        columnNumber: 9
     }, this);
 }
-_s(PersonalDataModal, "FNTmLB3JJmNTSY+WzXgjlHTR3xc=", false, function() {
+_s(PersonalDataModal, "ruNBQE1N88kie9ciTH2awlZ4ies=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$contexts$2f$language$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLang"]
     ];

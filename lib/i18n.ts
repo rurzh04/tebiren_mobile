@@ -127,11 +127,6 @@ export const translations = {
             firstName: "Имя",
             lastName: "Фамилия",
             email: "Email",
-            phone: "Телефон",
-            company: "Компания",
-            position: "Должность",
-            save: "Сохранить",
-            saved: "Данные сохранены!",
         },
 
         // Notifications
